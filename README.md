@@ -7,7 +7,9 @@ This is the game which developed by Unity3D 2021, to try to simulate the game 'M
 
 v0.1版本
 
-1. 素材导入 
+1. 素材绘制脚本 **DrawPolygon.py**
+
+    <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240731213640990.png" alt="image-20240731213640990" style="zoom:25%;" />
 
 2. 拖动组件设计
 
