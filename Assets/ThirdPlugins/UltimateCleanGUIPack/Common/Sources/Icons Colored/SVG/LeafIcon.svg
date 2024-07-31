@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="LeafIcon" transform="matrix(5.74655,0,1.85126e-15,5.74655,-8214.08,-3807.32)">
+        <g transform="matrix(0.513014,-1.26468e-32,0,1,718.102,-8.8342)">
+            <path d="M1477.11,729.607C1477.11,728.536 1475.42,727.667 1473.33,727.667C1471.24,727.667 1469.55,728.536 1469.55,729.607L1469.55,757.165C1469.55,758.236 1471.24,759.105 1473.33,759.105C1475.42,759.105 1477.11,758.236 1477.11,757.165L1477.11,729.607Z" style="fill:rgb(118,77,51);"/>
+        </g>
+        <g transform="matrix(1,0,0,1.02594,0,-17.2247)">
+            <path d="M1473.94,663.906C1489.09,663.906 1499.05,679.91 1499.05,699.621C1499.05,724.146 1484.65,735.336 1473.94,735.336C1463.23,735.336 1448.83,727.55 1448.83,699.621C1448.83,679.91 1458.79,663.906 1473.94,663.906Z" style="fill:rgb(63,188,123);"/>
+            <clipPath id="_clip1">
+                <path d="M1473.94,663.906C1489.09,663.906 1499.05,679.91 1499.05,699.621C1499.05,724.146 1484.65,735.336 1473.94,735.336C1463.23,735.336 1448.83,727.55 1448.83,699.621C1448.83,679.91 1458.79,663.906 1473.94,663.906Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1.15931,0,0,0.996541,-235.246,2.97196)">
+                    <rect x="1474.27" y="655.044" width="36.955" height="85.175" style="fill:rgb(50,148,98);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

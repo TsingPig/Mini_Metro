@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="SinglePlayerIcon" transform="matrix(4.47983,0,0,4.47983,-5743.25,-3207.28)">
+        <path d="M1372.84,825.478L1305.5,825.478C1302.2,825.478 1299.52,822.798 1299.52,819.496L1299.52,807.53L1299.52,785.451C1299.52,776.403 1305.6,768.763 1313.89,766.393C1319.33,776.824 1328.93,783.612 1339.15,783.612C1349.38,783.612 1358.98,776.821 1364.42,766.386C1372.73,768.747 1378.82,776.393 1378.82,785.451L1378.82,819.496C1378.82,822.797 1376.14,825.478 1372.84,825.478ZM1339.15,777.161C1326.78,777.161 1315.58,764.228 1315.58,747.55C1315.58,732.022 1321.32,720.718 1339.15,720.69C1356.99,720.662 1362.73,732.022 1362.73,747.55C1362.73,764.228 1351.53,777.161 1339.15,777.161Z" style="fill:white;"/>
+    </g>
+</svg>

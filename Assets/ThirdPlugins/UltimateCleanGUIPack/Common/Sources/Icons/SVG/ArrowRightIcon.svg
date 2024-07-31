@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="ArrowRightIcon" transform="matrix(20.1513,0,0,19.9128,-10263,-62837.4)">
+        <path d="M511.5,3169.99L528.868,3169.99L522.458,3176.4C521.865,3176.99 521.865,3177.95 522.458,3178.54C523.051,3179.14 524.012,3179.14 524.606,3178.54L533.558,3169.6C533.862,3169.29 534.008,3168.89 534,3168.49C534,3168.49 534,3168.49 534,3168.49C534,3168.49 534,3168.49 534,3168.49C534.008,3168.09 533.862,3167.69 533.558,3167.39L524.606,3158.44C524.012,3157.85 523.051,3157.85 522.458,3158.44C521.865,3159.03 521.865,3160 522.458,3160.59L528.868,3166.99L511.5,3166.99C510.672,3166.99 510,3167.66 510,3168.49C510,3169.32 510.672,3169.99 511.5,3169.99Z" style="fill:white;"/>
+    </g>
+</svg>

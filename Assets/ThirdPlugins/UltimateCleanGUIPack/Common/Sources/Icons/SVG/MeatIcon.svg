@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="MeatIcon" transform="matrix(8.41192,0,0,8.41192,-9558.52,-8068.49)">
+        <g transform="matrix(1.12786,0,0,0.96586,-130.557,20.059)">
+            <path d="M1150.23,974.003C1158.56,974.003 1165.32,980.879 1165.32,992.247C1165.32,1003.62 1158.56,1015.2 1150.23,1015.2C1141.9,1015.2 1135.14,1003.62 1135.14,992.247C1135.14,980.879 1141.9,974.003 1150.23,974.003Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-705.075,446.739)">
+            <path d="M1874.7,555.953L1874.7,566.959L1868.93,566.959L1868.93,555.953C1869.87,556.16 1870.83,556.269 1871.81,556.269C1872.79,556.269 1873.76,556.16 1874.7,555.953Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-0.576408,0)">
+            <g transform="matrix(0.717845,0,0,0.717845,148.855,294.225)">
+                <circle cx="1414.04" cy="1002.23" r="6.589" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.717845,0,0,0.717845,155.653,294.225)">
+                <circle cx="1414.04" cy="1002.23" r="6.589" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+</svg>

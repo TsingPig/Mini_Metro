@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="SpeedIcon" transform="matrix(3.61297,0,0,3.61297,-1335.97,-551.868)">
+        <g transform="matrix(1.20015,0,0,1.20015,126.913,-27.8057)">
+            <circle cx="290.389" cy="175.647" r="16.05" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,187.439,7.43723)">
+            <path d="M312.004,204.231L293.057,223.178L271.187,201.309L202.177,270.32" style="fill:none;stroke:white;stroke-width:13.33px;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,187.439,7.43723)">
+            <path d="M253.346,188.657L237.728,173.039L216.356,194.412" style="fill:none;stroke:white;stroke-width:13.33px;"/>
+        </g>
+        <g transform="matrix(6.12323e-17,-1,-1,-6.12323e-17,644.669,499.827)">
+            <path d="M253.346,188.657L237.728,173.039L216.356,194.412" style="fill:none;stroke:white;stroke-width:13.33px;"/>
+        </g>
+        <g transform="matrix(1.01715,0,0,1.39725,185.276,-76.1114)">
+            <path d="M214.226,213.089C214.226,212.246 213.286,211.562 212.129,211.562L195.317,211.562C194.159,211.562 193.22,212.246 193.22,213.089C193.22,213.931 194.159,214.615 195.317,214.615L212.129,214.615C213.286,214.615 214.226,213.931 214.226,213.089Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1.01715,0,0,1.39725,192.958,-67.6769)">
+            <path d="M214.226,213.089C214.226,212.246 213.286,211.562 212.129,211.562L195.317,211.562C194.159,211.562 193.22,212.246 193.22,213.089C193.22,213.931 194.159,214.615 195.317,214.615L212.129,214.615C213.286,214.615 214.226,213.931 214.226,213.089Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

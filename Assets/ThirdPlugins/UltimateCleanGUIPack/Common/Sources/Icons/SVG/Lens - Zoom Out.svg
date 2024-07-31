@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Lens---Zoom-Out" serif:id="Lens - Zoom Out" transform="matrix(1.93208,0,0,1.93208,0,0)">
+        <g id="Lens" transform="matrix(10.9221,0,0,10.9221,-6759.26,-30864.3)">
+            <path d="M642.544,2849.55C641.954,2850.14 640.997,2850.14 640.406,2849.55L635.77,2844.91C634.019,2846.22 631.854,2847 629.5,2847C623.701,2847 619,2842.3 619,2836.5C619,2830.7 623.701,2826 629.5,2826C635.299,2826 640,2830.7 640,2836.5C640,2838.85 639.216,2841.02 637.908,2842.77L642.544,2847.41C643.135,2848 643.135,2848.95 642.544,2849.55ZM629.5,2829C625.358,2829 622,2832.36 622,2836.5C622,2840.64 625.358,2844 629.5,2844C633.642,2844 637,2840.64 637,2836.5C637,2832.36 633.642,2829 629.5,2829Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(5.46717e-17,0.892857,-1.12644,6.89744e-17,241.598,13.3214)">
+            <path d="M129,79.097C129,72.972 122.727,68 115,68C107.273,68 101,72.972 101,79.097L101,143.903C101,150.028 107.273,155 115,155C122.727,155 129,150.028 129,143.903L129,79.097Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

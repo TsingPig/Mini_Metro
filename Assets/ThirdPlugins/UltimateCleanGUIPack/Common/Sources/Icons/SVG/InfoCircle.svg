@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="InfoCircle" transform="matrix(21.4207,0,0,21.4207,-15584.6,-79375.3)">
+        <path d="M739.5,3706C733.149,3706 728,3711.15 728,3717.5C728,3723.85 733.149,3729 739.5,3729C745.851,3729 751,3723.85 751,3717.5C751,3711.15 745.851,3706 739.5,3706ZM741,3722.5C741,3723.33 740.328,3724 739.5,3724C738.672,3724 738,3723.33 738,3722.5L738,3716.5C738,3715.67 738.672,3715 739.5,3715C740.328,3715 741,3715.67 741,3716.5L741,3722.5ZM739.5,3714C738.672,3714 738,3713.33 738,3712.5C738,3711.67 738.672,3711 739.5,3711C740.328,3711 741,3711.67 741,3712.5C741,3713.33 740.328,3714 739.5,3714Z" style="fill:white;"/>
+    </g>
+</svg>

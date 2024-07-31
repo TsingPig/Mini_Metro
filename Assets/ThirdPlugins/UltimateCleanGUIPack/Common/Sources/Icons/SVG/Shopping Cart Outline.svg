@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Shopping-Cart-Outline" serif:id="Shopping Cart Outline" transform="matrix(1,0,0,1,0,0.326008)">
+        <g transform="matrix(0.85683,0,0,0.926472,20.0365,10.0275)">
+            <path d="M12.388,86.389L25.276,195.856C25.276,218.645 45.281,237.146 69.922,237.146L182.167,237.146C206.808,237.146 226.813,218.645 226.813,195.856L239.618,87.086" style="fill:none;stroke:white;stroke-width:29.88px;"/>
+        </g>
+        <g transform="matrix(1.01604,0,0,1,-0.365324,1.48261)">
+            <path d="M251.724,81.193C251.724,77.647 248.89,74.768 245.4,74.768L7.278,74.768C3.787,74.768 0.954,77.647 0.954,81.193L0.954,94.044C0.954,97.591 3.787,100.47 7.278,100.47L245.4,100.47C248.89,100.47 251.724,97.591 251.724,94.044L251.724,81.193Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0.137061,0)">
+            <g transform="matrix(1,0,0,1,-3.80956,4.28466)">
+                <path d="M99.856,21.327L66.534,79.237" style="fill:none;stroke:white;stroke-width:26.67px;"/>
+            </g>
+            <g transform="matrix(-1,0,0,1,259.535,4.28466)">
+                <path d="M99.856,21.327L66.534,79.237" style="fill:none;stroke:white;stroke-width:26.67px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

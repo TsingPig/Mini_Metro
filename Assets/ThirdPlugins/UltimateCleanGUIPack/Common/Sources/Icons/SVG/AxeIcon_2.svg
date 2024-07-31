@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="AxeIcon" transform="matrix(7.12775,0,0,7.12775,-2700.25,-2181.59)">
+        <g transform="matrix(0.815055,0,0,0.988323,112.837,1.33568)">
+            <path d="M357.002,314.854C357.002,313.857 356.022,313.049 354.813,313.049L350.435,313.049C349.227,313.049 348.246,313.857 348.246,314.854L348.246,376.55C348.246,377.546 349.227,378.355 350.435,378.355L354.813,378.355C356.022,378.355 357.002,377.546 357.002,376.55L357.002,314.854Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.833849,0,0,1.09586,-808.073,192.841)">
+            <path d="M1449.09,140.065L1463.1,143.428L1449.09,146.79L1435.07,143.428L1449.09,140.065Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.844841,0,0,1,108.519,-2.3198)">
+            <path d="M386.225,311.018C379.884,319.238 367.22,322.316 353.264,319.018L353.264,340.487C366.83,336.18 377.927,338.871 386.225,349.487C395.682,343.082 396.102,320.245 386.225,311.018Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

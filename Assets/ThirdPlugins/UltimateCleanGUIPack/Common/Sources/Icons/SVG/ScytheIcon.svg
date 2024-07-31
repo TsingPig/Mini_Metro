@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="ScytheIcon" transform="matrix(7.26479,0,0,7.26479,-10353.2,-807.931)">
+        <g transform="matrix(0.953674,0,0,0.712512,66.161,50.7218)">
+            <path d="M1450.58,117.917L1441.86,117.917L1441.86,180.787C1441.86,181.431 1442.25,181.955 1442.73,181.955L1449.71,181.955C1450.19,181.955 1450.58,181.431 1450.58,180.787L1450.58,117.917Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.953674,0,0,0.295433,66.161,78.7338)">
+            <path d="M1450.58,120.733C1450.58,119.179 1450.19,117.917 1449.71,117.917L1442.73,117.917C1442.25,117.917 1441.86,119.179 1441.86,120.733L1441.86,181.955L1450.58,181.955L1450.58,120.733Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1.32922,0,0,1.32922,-477.886,-44.3368)">
+            <path d="M1455.85,118.099L1449.18,130.996C1463.84,126.86 1476.26,136.87 1478.67,141.632C1481.71,129.263 1470.89,116.892 1455.85,118.099Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.923383,0,0,1.21352,107.323,-26.1456)">
+            <path d="M1449.09,140.065L1463.1,143.428L1449.09,146.79L1435.07,143.428L1449.09,140.065Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.779816,-0.208951,0.338292,1.26252,275.62,270.923)">
+            <rect x="1445.43" y="121.611" width="18.349" height="6.294" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="DoubleAxeIcon" transform="matrix(6.07463,0,0,7.3974,-3594.66,-44373.1)">
+        <g transform="matrix(1.191,0,0,0.978031,-1212.72,124.82)">
+            <path d="M1541.56,6033.33C1533.69,6035.27 1528.02,6040.13 1523.35,6046.3C1516.23,6033.7 1514.93,6020.94 1523.58,6007.9C1528.14,6014.13 1534.08,6018.42 1541.56,6020.55L1541.56,6033.33ZM1559.38,6020.55C1566.86,6018.43 1572.8,6014.13 1577.36,6007.9C1586.01,6020.94 1584.71,6033.7 1577.59,6046.3C1572.92,6040.12 1567.25,6035.27 1559.38,6033.33L1559.38,6020.55Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.401444,0,0,0.32966,99.7488,3988.55)">
+            <path d="M1310.51,6135.76L1304.11,6129.74L1330.56,6104.87L1357,6129.74L1350.61,6135.76L1350.61,6189.8L1330.56,6212.89L1310.51,6189.8L1310.51,6135.76Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1.20987,0,0,0.99353,-1241.24,28.8165)">
+            <path d="M1555.41,6069.65L1555.42,6069.65L1556.49,6074.11L1554.59,6075.93L1545.14,6075.93L1543.24,6074.11L1544.31,6069.66L1544.31,6043.55L1549.82,6049.94L1555.41,6043.47L1555.41,6069.65Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="LeafIcon" transform="matrix(5.6974,6.46461e-16,1.02182e-15,5.6974,-8141.64,-3772.83)">
+        <g transform="matrix(0.513014,-3.86737e-17,1.19157e-16,0.335613,718.102,495.505)">
+            <path d="M1477.11,733.446C1477.11,730.257 1475.42,727.667 1473.33,727.667C1471.24,727.667 1469.55,730.257 1469.55,733.446L1469.55,753.326C1469.55,756.515 1471.24,759.105 1473.33,759.105C1475.42,759.105 1477.11,756.515 1477.11,753.326L1477.11,733.446Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1.03171,-1.17064e-16,-1.85035e-16,1.03171,-9022.86,-3051.95)">
+            <path d="M10172.3,3672.59L10172.3,3672.6C10162.2,3671.69 10149.9,3663.29 10149.9,3637.16C10149.9,3618.41 10158.7,3603.03 10172.3,3601.74L10172.3,3672.59ZM10176.1,3601.74C10189.7,3603.03 10198.5,3618.41 10198.5,3637.16C10198.5,3660.11 10186.2,3671.31 10176.1,3672.56L10176.1,3601.74Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

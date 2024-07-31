@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="MapPinIcon" transform="matrix(20.4908,0,0,20.4908,-19384.5,-55643)">
+        <path d="M966.498,2727.42C964.577,2733.88 958.5,2740 958.5,2740C958.5,2740 952.444,2733.89 950.513,2727.45C950.187,2726.54 950,2725.52 950,2724.5C950,2719.78 953.806,2716 958.5,2716C963.194,2716 967,2719.78 967,2724.5C967,2725.51 966.817,2726.52 966.498,2727.42ZM958.5,2721C956.567,2721 955,2722.57 955,2724.5C955,2726.43 956.567,2728 958.5,2728C960.433,2728 962,2726.43 962,2724.5C962,2722.57 960.433,2721 958.5,2721Z" style="fill:white;"/>
+    </g>
+</svg>

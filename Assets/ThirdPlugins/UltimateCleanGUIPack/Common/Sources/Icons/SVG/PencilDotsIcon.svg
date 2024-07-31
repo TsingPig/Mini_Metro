@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="PencilDotsIcon" transform="matrix(7.85561,0,0,7.45485,-35011,-13389.9)">
+        <g id="PencilIcon" transform="matrix(1.53057,0,0,1.61285,4203.41,-2746.89)">
+            <path d="M205.301,2832.22L200.772,2827.69L201.527,2826.93C202.778,2825.68 204.805,2825.68 206.056,2826.93C207.307,2828.18 207.307,2830.21 206.056,2831.46L205.301,2832.22ZM183.001,2850L184.511,2843.96L185.266,2843.2L189.795,2847.73L189.04,2848.49L183.001,2850ZM203.792,2833.73L191.305,2846.22L186.775,2841.69L199.263,2829.2L203.792,2833.73Z" style="fill:white;"/>
+        </g>
+        <g id="Dots">
+            <g transform="matrix(0.957992,0,0,1.00949,3582.31,-2911.15)">
+                <circle cx="917.432" cy="4713.58" r="2.737" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.957992,0,0,1.00949,3590.18,-2911.15)">
+                <circle cx="917.432" cy="4713.58" r="2.737" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.957992,0,0,1.00949,3598.04,-2911.15)">
+                <circle cx="917.432" cy="4713.58" r="2.737" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+</svg>

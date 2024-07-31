@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Star---Round" serif:id="Star - Round" transform="matrix(12.0206,0,0,12.0206,-11.0969,22.0933)">
+        <path d="M22.22,0.544C25.126,0.544 28.952,12.043 28.952,12.043C28.952,12.043 41.07,12.128 41.968,14.892C42.866,17.656 33.112,24.847 33.112,24.847C33.112,24.847 36.776,36.399 34.425,38.107C32.074,39.815 22.22,32.761 22.22,32.761C22.22,32.761 12.366,39.815 10.015,38.107C7.664,36.399 11.328,24.847 11.328,24.847C11.328,24.847 1.574,17.656 2.472,14.892C3.37,12.128 15.488,12.043 15.488,12.043C15.488,12.043 19.314,0.544 22.22,0.544Z" style="fill:white;"/>
+    </g>
+</svg>

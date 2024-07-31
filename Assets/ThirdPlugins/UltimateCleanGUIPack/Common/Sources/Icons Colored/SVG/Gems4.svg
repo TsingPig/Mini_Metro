@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Gems4" transform="matrix(1.96978,0,0,1.86929,-8473.38,-894.011)">
+        <g id="GemIcon" transform="matrix(1.50321,-2.59473e-16,1.29736e-16,1.58402,4355.75,572.795)">
+            <path d="M17.53,0L0.5,22.981C11.745,26.671 22.976,28.866 34.124,22.981C33.344,12.606 27.813,4.946 17.53,0Z" style="fill:rgb(0,229,255);fill-rule:nonzero;"/>
+            <path d="M50.718,0C43.555,6.1 37.048,12.832 34.093,22.981C44.363,30.836 55.487,30.338 67.313,22.981C67.867,12.896 62.206,5.287 50.718,0Z" style="fill:rgb(0,203,244);fill-rule:nonzero;"/>
+            <path d="M84.331,-0.028C75.465,5.708 68.284,12.464 67.313,22.981C78.572,29.86 89.531,26.231 100.5,22.981L84.331,-0.028Z" style="fill:rgb(0,184,240);fill-rule:nonzero;"/>
+            <g transform="matrix(1,0,0,1,0,-0.4418)">
+                <path d="M67.313,23.592L84.343,0.442L50.675,0.442L67.313,23.592Z" style="fill:rgb(63,233,255);fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,0,-0.4418)">
+                <path d="M34.124,23.44L50.718,0.442L17.53,0.442L34.124,23.44Z" style="fill:rgb(132,255,249);fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,0,0.0099)">
+                <path d="M0.5,22.981L51.761,80.034C51.24,60.188 48.905,40.622 34.124,22.981L0.5,22.981Z" style="fill:rgb(132,255,249);fill-rule:nonzero;"/>
+            </g>
+            <path d="M34.124,22.981L51.75,80.038C60.947,62.614 69.665,45 67.313,22.981L34.124,22.981Z" style="fill:rgb(0,229,255);fill-rule:nonzero;"/>
+            <g transform="matrix(1,0,0,1,0,0.1085)">
+                <path d="M100.5,22.866L51.752,79.93L67.313,22.866L100.5,22.866Z" style="fill:rgb(0,200,239);fill-rule:nonzero;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,0,-16.1673)">
+            <g id="Sparkle" transform="matrix(0.778652,0,0,0.82051,-10741.2,-2640.07)">
+                <path d="M19613,3940.99L19617.4,3952.7L19629.1,3957.03L19617.4,3961.36L19613,3973.07L19608.7,3961.36L19597,3957.03L19608.7,3952.7L19613,3940.99Z" style="fill:rgb(0,229,255);"/>
+            </g>
+            <g id="Sparkle1" serif:id="Sparkle" transform="matrix(0.778652,0,0,0.82051,-10938.9,-2636.37)">
+                <path d="M19613,3940.99L19617.4,3952.7L19629.1,3957.03L19617.4,3961.36L19613,3973.07L19608.7,3961.36L19597,3957.03L19608.7,3952.7L19613,3940.99Z" style="fill:rgb(0,229,255);"/>
+            </g>
+            <g id="Sparkle2" serif:id="Sparkle" transform="matrix(0.778652,0,0,0.82051,-10840.1,-2686.62)">
+                <path d="M19613,3940.99L19617.4,3952.7L19629.1,3957.03L19617.4,3961.36L19613,3973.07L19608.7,3961.36L19597,3957.03L19608.7,3952.7L19613,3940.99Z" style="fill:rgb(0,229,255);"/>
+            </g>
+        </g>
+    </g>
+</svg>

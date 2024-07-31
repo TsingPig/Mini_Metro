@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="RedoIcon" transform="matrix(19.7752,0,0,19.5412,-16533.2,-68099)">
+        <path d="M860.607,3495L857.477,3495L851.96,3495L855.342,3491.63C853.717,3490.01 851.48,3489 849,3489C844.029,3489 840,3493.03 840,3498C840,3502.97 844.029,3507 849,3507C852.591,3507 855.682,3504.89 857.126,3501.85C857.126,3501.85 857.378,3501 858.5,3501C859.328,3501 860,3501.67 860,3502.5C860,3502.79 859.899,3503.04 859.76,3503.26C857.808,3507.25 853.734,3510 849,3510C842.373,3510 837,3504.63 837,3498C837,3491.37 842.373,3486 849,3486C852.311,3486 855.297,3487.35 857.464,3489.52L861,3486L861,3495L860.607,3495Z" style="fill:white;"/>
+    </g>
+</svg>

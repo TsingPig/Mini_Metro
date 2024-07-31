@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Star-Round" serif:id="Star Round" transform="matrix(2.07399,0,0,2.07399,-11.2362,6.93471)">
+        <path d="M106.799,18.92C110.317,9.804 119.081,3.793 128.851,3.793C138.622,3.793 147.386,9.804 150.904,18.92L171.536,72.389L228.764,75.489C238.521,76.018 246.946,82.495 249.966,91.787C252.985,101.08 249.976,111.272 242.393,117.435L197.917,153.58L212.653,208.965C215.165,218.408 211.609,228.422 203.704,234.166C195.799,239.909 185.176,240.196 176.972,234.889L128.851,203.759L80.731,234.889C72.527,240.196 61.903,239.909 53.999,234.166C46.094,228.422 42.538,218.408 45.05,208.965L59.786,153.58L15.31,117.435C7.727,111.272 4.718,101.08 7.737,91.787C10.757,82.495 19.182,76.018 28.939,75.489L86.167,72.389L106.799,18.92Z" style="fill:white;"/>
+    </g>
+</svg>

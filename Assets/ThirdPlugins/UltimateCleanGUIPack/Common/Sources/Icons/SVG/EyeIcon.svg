@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="EyeIcon" transform="matrix(9.17425,0,0,8.70623,-38861,-13279.6)">
+        <g transform="matrix(0.957992,0,0,1.00949,3582.13,-2911.1)">
+            <path d="M711.548,4405.15C726.861,4405.15 739.04,4415.79 739.293,4423.82C739.537,4431.56 726.861,4442.49 711.548,4442.49C696.234,4442.49 683.558,4432.14 683.802,4423.82C684.076,4414.46 696.234,4405.15 711.548,4405.15ZM711.548,4410.66C718.813,4410.66 724.712,4416.56 724.712,4423.82C724.712,4431.09 718.813,4436.99 711.548,4436.99C704.282,4436.99 698.383,4431.09 698.383,4423.82C698.383,4416.56 704.282,4410.66 711.548,4410.66Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.453678,0,0,0.478067,3940.05,-559.278)">
+            <circle cx="713.578" cy="4421.95" r="13.165" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

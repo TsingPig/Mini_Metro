@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="ShieldIcon" transform="matrix(5.30292,0,0,5.30292,-7544.5,-4997.31)">
+        <g transform="matrix(1.14337,0,0,1.14337,-10221.9,-3007.12)">
+            <path d="M10194.6,3469.82C10206.3,3467.12 10226.5,3457.01 10226.6,3457.01C10226.6,3457 10246.8,3467.12 10258.5,3469.82C10270.3,3523.12 10226.6,3535.97 10226.6,3535.97C10226.6,3535.97 10183.8,3522.32 10194.6,3469.82ZM10199.9,3474.24C10209.7,3471.99 10226.6,3463.56 10226.6,3463.55C10226.6,3463.55 10243.5,3471.99 10253.3,3474.24C10263,3518.7 10226.6,3529.42 10226.6,3529.42C10226.6,3529.42 10190.9,3518.04 10199.9,3474.24Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.54909,0,0,0.54909,839.382,620.401)">
+            <path d="M1113.54,643.8C1126.94,640.715 1150.1,629.152 1150.12,629.147C1150.15,629.138 1173.3,640.715 1186.7,643.8C1200.11,704.734 1150.12,719.427 1150.12,719.427C1150.12,719.427 1101.22,703.82 1113.54,643.8Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

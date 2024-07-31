@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Camera-Outline" serif:id="Camera Outline" transform="matrix(18.0157,0,0,18.0157,-1439.51,-1675.27)">
+        <g transform="matrix(0.88645,0,0,0.88645,10.6865,12.1724)">
+            <path d="M87.911,99.422L87.911,96.202C87.911,94.969 88.911,93.969 90.144,93.969L98.081,93.969C99.313,93.969 100.314,94.969 100.314,96.202L100.314,99.422L103.196,99.422C106.016,99.422 108.306,101.712 108.306,104.533L108.306,115.318C108.306,118.139 106.016,120.429 103.196,120.429L85.029,120.429C82.209,120.429 79.919,118.139 79.919,115.318L79.919,104.533C79.919,101.712 82.209,99.422 85.029,99.422L87.911,99.422Z" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,0.565578)">
+            <g transform="matrix(0.810891,0,0,0.810891,17.7598,19.0453)">
+                <path d="M94.159,103.306C98.295,103.306 101.653,106.664 101.653,110.8C101.653,114.936 98.295,118.293 94.159,118.293C90.023,118.293 86.665,114.936 86.665,110.8C86.665,106.664 90.023,103.306 94.159,103.306ZM94.159,106.518C96.522,106.518 98.441,108.436 98.441,110.8C98.441,113.163 96.522,115.081 94.159,115.081C91.796,115.081 89.877,113.163 89.877,110.8C89.877,108.436 91.796,106.518 94.159,106.518Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.273102,0,0,0.273102,68.4766,78.5918)">
+                <circle cx="93.869" cy="110.947" r="7.003" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+</svg>

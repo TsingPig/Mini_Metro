@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Coin" transform="matrix(4.25672,0,0,4.03957,-18624.5,-6142.39)">
+        <g transform="matrix(0.957992,0,0,1.00949,-13997.3,-3349.27)">
+            <circle cx="19241.1" cy="4886.82" r="60.413" style="fill:rgb(255,207,65);"/>
+            <clipPath id="_clip1">
+                <circle cx="19241.1" cy="4886.82" r="60.413"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1,0,0,0.862674,1.81899e-12,681.085)">
+                    <rect x="19241.7" y="4794.31" width="78.177" height="165.318" style="fill:rgb(249,181,44);"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0.587472,-0.165875,0.157413,0.619053,-7643.61,1746.99)">
+            <path d="M19241.5,4817.37C19250.6,4818.04 19253,4835.38 19240.8,4835.46C19240.4,4835.46 19240.1,4835.47 19239.8,4835.47C19219.2,4836.07 19199.7,4850.02 19192.7,4869.47C19190.7,4875.02 19189.7,4880.92 19189.7,4886.82C19189.7,4886.82 19185.6,4899.13 19176.8,4895.02C19168.5,4891.12 19171.2,4876.43 19175.4,4864.15C19184.6,4837.52 19211,4817.81 19240.2,4817.36C19240.2,4817.36 19240.6,4817.35 19241.5,4817.37Z" style="fill:rgb(255,235,105);"/>
+        </g>
+        <g transform="matrix(0.656883,0,0,0.692196,-8203.69,-1798.71)">
+            <circle cx="19241.1" cy="4886.82" r="60.413" style="fill:rgb(249,181,44);"/>
+            <clipPath id="_clip2">
+                <circle cx="19241.1" cy="4886.82" r="60.413"/>
+            </clipPath>
+            <g clip-path="url(#_clip2)">
+                <g transform="matrix(1.32155,0,0,0.793564,-6186.9,1017.63)">
+                    <rect x="19241.7" y="4794.31" width="78.177" height="165.318" style="fill:rgb(255,207,65);"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0.498647,0,0,0.525453,-5159.05,-983.865)">
+            <circle cx="19241.1" cy="4886.82" r="60.413" style="fill:rgb(255,207,65);"/>
+            <clipPath id="_clip3">
+                <circle cx="19241.1" cy="4886.82" r="60.413"/>
+            </clipPath>
+            <g clip-path="url(#_clip3)">
+                <g transform="matrix(1,0,0,0.862674,1.81899e-12,681.085)">
+                    <rect x="19241.7" y="4794.31" width="78.177" height="165.318" style="fill:rgb(249,181,44);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

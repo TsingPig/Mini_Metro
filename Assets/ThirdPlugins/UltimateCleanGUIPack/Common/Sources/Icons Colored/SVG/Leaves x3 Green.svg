@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Leaves-x3-Green" serif:id="Leaves x3 Green" transform="matrix(1.3753,0,0,1.33067,-509.879,-46.6776)">
+        <g id="Plant" transform="matrix(1.12093,0,0,1.12093,-217.073,-44.0448)">
+            <g transform="matrix(1.47963,0,0,1.61095,492.701,70.9329)">
+                <ellipse cx="133.651" cy="50.597" rx="38.097" ry="50.174" style="fill:rgb(51,199,120);"/>
+                <clipPath id="_clip1">
+                    <ellipse cx="133.651" cy="50.597" rx="38.097" ry="50.174"/>
+                </clipPath>
+                <g clip-path="url(#_clip1)">
+                    <g transform="matrix(0.853451,0,0,0.852146,-1285.44,-696.214)">
+                        <rect x="1662.74" y="814.242" width="55.864" height="126.083" style="fill:rgb(30,168,97);"/>
+                    </g>
+                </g>
+            </g>
+            <g transform="matrix(0.694215,0,0,3.07963,-464.378,-2672.82)">
+                <path d="M1673.15,999.099C1673.15,999.099 1668.83,891.636 1663.51,891.636C1658.19,891.636 1653.87,999.099 1653.87,999.099C1653.87,1000.53 1658.19,1001.69 1663.51,1001.69C1668.83,1001.69 1673.15,1000.53 1673.15,999.099Z" style="fill:rgb(14,120,90);"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,1.46458,74.423)">
+            <g id="Plant1" serif:id="Plant" transform="matrix(0.970758,0.560467,-0.560467,0.970758,34.6841,-319.271)">
+                <g transform="matrix(1.47963,0,0,1.61095,492.701,31.2754)">
+                    <ellipse cx="133.651" cy="50.597" rx="38.097" ry="50.174" style="fill:rgb(51,199,120);"/>
+                    <clipPath id="_clip2">
+                        <ellipse cx="133.651" cy="50.597" rx="38.097" ry="50.174"/>
+                    </clipPath>
+                    <g clip-path="url(#_clip2)">
+                        <g transform="matrix(0.853451,0,0,0.852146,-1285.44,-696.214)">
+                            <rect x="1662.74" y="814.242" width="55.864" height="126.083" style="fill:rgb(30,168,97);"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(0.694215,0,0,2.87379,-464.378,-2530.34)">
+                    <path d="M1655.32,968.874L1671.92,973.01C1670.28,941.203 1667.12,891.636 1663.51,891.636C1660.05,891.636 1657.02,937.089 1655.32,968.874Z" style="fill:rgb(14,120,90);"/>
+                </g>
+            </g>
+            <g id="Plant2" serif:id="Plant" transform="matrix(-0.970758,0.560467,0.560467,0.970758,1076.15,-319.271)">
+                <g transform="matrix(1.47963,0,0,1.61095,492.701,31.2754)">
+                    <ellipse cx="133.651" cy="50.597" rx="38.097" ry="50.174" style="fill:rgb(51,199,120);"/>
+                    <clipPath id="_clip3">
+                        <ellipse cx="133.651" cy="50.597" rx="38.097" ry="50.174"/>
+                    </clipPath>
+                    <g clip-path="url(#_clip3)">
+                        <g transform="matrix(0.853451,0,0,0.852146,-1285.44,-696.214)">
+                            <rect x="1662.74" y="814.242" width="55.864" height="126.083" style="fill:rgb(30,168,97);"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(0.694215,0,0,2.87379,-464.378,-2530.34)">
+                    <path d="M1655.32,968.874L1671.92,973.01C1670.28,941.203 1667.12,891.636 1663.51,891.636C1660.05,891.636 1657.02,937.089 1655.32,968.874Z" style="fill:rgb(14,120,90);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

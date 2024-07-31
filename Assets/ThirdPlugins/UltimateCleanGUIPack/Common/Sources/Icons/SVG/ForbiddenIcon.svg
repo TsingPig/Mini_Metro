@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="ForbiddenIcon" transform="matrix(8.4704,0,0,8.4704,-18282.7,-8048.02)">
+        <path d="M2188.64,952.704C2204.09,952.704 2216.63,965.095 2216.63,980.357C2216.63,995.619 2204.09,1008.01 2188.64,1008.01C2173.2,1008.01 2160.66,995.619 2160.66,980.357C2160.66,965.095 2173.2,952.704 2188.64,952.704ZM2171.13,966.583C2168.08,970.364 2166.26,975.151 2166.26,980.357C2166.26,992.567 2176.29,1002.48 2188.64,1002.48C2193.91,1002.48 2198.76,1000.68 2202.58,997.664L2171.13,966.583ZM2206.16,994.13C2209.21,990.35 2211.03,985.562 2211.03,980.357C2211.03,968.147 2201,958.234 2188.64,958.234C2183.38,958.234 2178.53,960.036 2174.7,963.049L2206.16,994.13Z" style="fill:white;"/>
+    </g>
+</svg>

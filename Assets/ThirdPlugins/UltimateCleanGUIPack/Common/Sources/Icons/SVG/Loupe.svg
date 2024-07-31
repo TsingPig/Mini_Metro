@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="LoupeIcon" transform="matrix(27.9199,0,0,27.9199,-11805.3,-54299.3)">
+        <path d="M439.696,1961.7C439.303,1962.09 438.664,1962.09 438.271,1961.7L435.18,1958.61C434.013,1959.48 432.569,1960 431,1960C427.134,1960 424,1956.87 424,1953C424,1949.13 427.134,1946 431,1946C434.866,1946 438,1949.13 438,1953C438,1954.57 437.477,1956.01 436.605,1957.18L439.696,1960.27C440.09,1960.66 440.09,1961.3 439.696,1961.7ZM431,1948C428.239,1948 426,1950.24 426,1953C426,1955.76 428.239,1958 431,1958C433.761,1958 436,1955.76 436,1953C436,1950.24 433.761,1948 431,1948Z" style="fill:white;"/>
+    </g>
+</svg>

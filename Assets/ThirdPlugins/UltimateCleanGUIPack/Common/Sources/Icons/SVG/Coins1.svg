@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Coins1" transform="matrix(9.16285,0,0,8.6954,-38991.4,-3967.91)">
+        <g transform="matrix(0.97205,0,0,1.0243,-4934.97,-3423.71)">
+            <path d="M9508.32,3816.43C9508.32,3816.43 9508.36,3823.72 9508.36,3823.94C9508.36,3830.55 9497.15,3835.91 9483.34,3835.91C9469.53,3835.91 9458.32,3830.55 9458.32,3823.94C9458.32,3823.88 9458.32,3816.43 9458.32,3816.43C9463.88,3821.33 9473.01,3824.52 9483.32,3824.52C9493.63,3824.52 9502.76,3821.33 9508.32,3816.43Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.867198,0,0,0.972691,3653.46,-3468.73)">
+            <ellipse cx="726.292" cy="4057.9" rx="28.021" ry="12.604" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="ArrowCircleLeft" transform="matrix(-1.97683,-2.42092e-16,2.42092e-16,-1.97683,517.931,517.931)">
+        <path d="M132.5,3C203.973,3 262,61.027 262,132.5C262,203.973 203.973,262 132.5,262C61.027,262 3,203.973 3,132.5C3,61.027 61.027,3 132.5,3ZM102.012,82.827L151.791,132.5L102.012,182.174C98.282,185.898 98.282,191.935 102.012,195.659C105.747,199.384 111.796,199.384 115.527,195.659L171.86,139.441C173.777,137.529 174.693,135.008 174.637,132.5C174.693,129.994 173.777,127.471 171.86,125.558L115.527,69.34C111.796,65.616 105.747,65.616 102.012,69.34C98.282,73.064 98.282,79.103 102.012,82.827Z" style="fill:white;"/>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="BrushIcon" transform="matrix(6.5775,6.5775,-6.5775,6.5775,1239.08,39.0709)">
+        <g transform="matrix(0.354899,0,0,0.354899,-166.79,63.4841)">
+            <ellipse cx="306.752" cy="123.571" rx="15.73" ry="15.113" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.403113,0,0,0.403113,-182.093,59.2161)">
+            <path d="M297.613,102.797C296.984,95.623 296.633,87.656 296.633,79.269C296.633,47.824 301.559,13.337 307.625,13.337C313.692,13.337 318.617,47.824 318.617,79.269C318.617,87.395 318.288,95.126 317.695,102.124C315.198,100.016 311.785,98.717 308.023,98.717C303.876,98.717 300.152,100.296 297.613,102.797Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.403113,0,0,0.403113,-182.093,59.2161)">
+            <path d="M305.714,145.493C312.973,141.018 319.156,134.472 321.655,121.662L296.98,127.368C303.617,135.767 304.5,138.576 305.714,145.493Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

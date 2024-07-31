@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="ArrowDownIcon" transform="matrix(19.0652,0,0,18.8395,-9705.4,-61499.9)">
+        <path d="M523.991,3267.5L523.991,3284.87L530.397,3278.46C530.989,3277.87 531.95,3277.87 532.543,3278.46C533.135,3279.05 533.135,3280.01 532.543,3280.61L523.597,3289.56C523.293,3289.86 522.892,3290.01 522.494,3290L522.491,3290C522.093,3290.01 521.692,3289.86 521.388,3289.56L512.442,3280.61C511.849,3280.01 511.849,3279.05 512.442,3278.46C513.034,3277.87 513.995,3277.87 514.588,3278.46L520.994,3284.87L520.994,3267.5C520.994,3266.67 521.665,3266 522.492,3266C523.32,3266 523.991,3266.67 523.991,3267.5Z" style="fill:white;"/>
+    </g>
+</svg>

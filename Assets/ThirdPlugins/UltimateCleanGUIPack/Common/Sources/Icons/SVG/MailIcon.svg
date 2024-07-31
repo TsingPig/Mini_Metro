@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="MailIcon" transform="matrix(8.45726,0,0,8.45726,-7679.76,-8312.67)">
+        <path d="M966.56,992.791C966.922,993.452 967.128,994.211 967.128,995.017L967.128,1031.33C967.128,1033.9 965.043,1035.98 962.476,1035.98L914.198,1035.98C911.63,1035.98 909.546,1033.9 909.546,1031.33L909.546,995.017C909.546,994.211 909.751,993.452 910.113,992.791L936.68,1019.36C937.595,1020.27 939.079,1020.27 939.993,1019.36L966.56,992.791ZM962.476,990.365C962.577,990.365 962.678,990.368 962.777,990.375L939.662,1013.49C938.93,1014.22 937.743,1014.22 937.012,1013.49L913.896,990.375C913.996,990.368 914.096,990.365 914.198,990.365L962.476,990.365Z" style="fill:white;"/>
+    </g>
+</svg>

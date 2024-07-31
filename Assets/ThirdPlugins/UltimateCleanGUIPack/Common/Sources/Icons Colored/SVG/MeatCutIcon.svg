@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="MeatCutIcon" transform="matrix(4.10959,0,0,3.89994,-17419.3,-7019.06)">
+        <g transform="matrix(0.73285,0,0,0.772246,3570.06,-1744.76)">
+            <rect x="988.642" y="4704.77" width="17.511" height="36.394" style="fill:rgb(239,199,147);"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-1.1382,4.54747e-13)">
+            <g transform="matrix(0.73285,0,0,0.772246,3567.74,-1745.89)">
+                <circle cx="992.703" cy="4747.37" r="11.049" style="fill:rgb(239,199,147);"/>
+            </g>
+            <g transform="matrix(0.73285,0,0,0.772246,3581.53,-1745.89)">
+                <circle cx="992.703" cy="4747.37" r="11.049" style="fill:rgb(239,199,147);"/>
+            </g>
+        </g>
+        <g transform="matrix(0.557974,0,0,0.519536,3629.2,-568.16)">
+            <path d="M1276.79,4626.77C1272.24,4664.21 1264.52,4747.94 1203.99,4747.94C1143.46,4747.94 1135.75,4664.21 1131.19,4626.77L1276.79,4626.77Z" style="fill:rgb(139,95,60);"/>
+        </g>
+        <g transform="matrix(0.598233,0,0,0.888143,3582.42,-2241.39)">
+            <ellipse cx="1201.17" cy="4588.12" rx="67.898" ry="35.387" style="fill:rgb(219,133,76);"/>
+        </g>
+        <g transform="matrix(0.216138,0,0,0.310924,4041.38,404.872)">
+            <ellipse cx="1201.17" cy="4588.12" rx="67.898" ry="35.387" style="fill:rgb(239,199,147);"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="BookIcon" transform="matrix(5.03813,0,0,5.03813,-7141.28,-2534.02)">
+        <g transform="matrix(1.05992,-0.329691,0.435906,0.993818,-319.941,486.503)">
+            <rect x="1441.8" y="512.274" width="46.636" height="55.016" style="fill:rgb(98,81,75);"/>
+        </g>
+        <g transform="matrix(1.05992,-0.329691,0.435906,0.993818,-319.941,502.488)">
+            <rect x="1441.8" y="512.274" width="46.636" height="55.016" style="fill:rgb(98,81,75);"/>
+        </g>
+        <g transform="matrix(0.0696595,-0.0216678,0.435889,0.993781,1107.82,42.4145)">
+            <rect x="1441.8" y="512.274" width="46.636" height="55.016" style="fill:rgb(84,69,65);"/>
+        </g>
+        <g transform="matrix(0.955841,-0.293884,0.293884,0.955841,-101.212,448.391)">
+            <g transform="matrix(0.756197,0,0,0.756197,362.375,137.465)">
+                <circle cx="1471.09" cy="545.879" r="17.599" style="fill:rgb(135,112,104);"/>
+            </g>
+            <g transform="matrix(1,0,0,1,-0.448088,-0.322623)">
+                <path d="M1475.26,542.622L1481.65,555.42L1468.86,555.42L1475.26,542.622Z" style="fill:none;stroke:white;stroke-width:0.56px;"/>
+            </g>
+        </g>
+        <g transform="matrix(0.971332,-0.302136,-0.000820941,-0.32544,56.8604,1194.45)">
+            <path d="M1489.91,512.274L1441.8,512.274L1441.8,567.291L1489.91,567.291C1488.02,546.591 1488.25,528.542 1489.91,512.274Z" style="fill:rgb(211,186,148);"/>
+        </g>
+        <g transform="matrix(-0.0649626,0.0202068,-0.0032499,-0.324685,1554.07,728.739)">
+            <rect x="1441.8" y="512.274" width="46.636" height="55.016" style="fill:rgb(84,69,65);"/>
+        </g>
+        <g transform="matrix(1.06687,-0.331853,-0.000163433,-0.0647885,-83.0825,1090)">
+            <rect x="1441.8" y="512.274" width="46.636" height="55.016" style="fill:rgb(84,69,65);"/>
+        </g>
+        <g transform="matrix(1.05628,-0.328559,-7.43669e-05,-0.0294808,-67.1854,1081.31)">
+            <rect x="1441.8" y="512.274" width="46.636" height="55.016" style="fill:rgb(84,69,65);"/>
+        </g>
+        <g transform="matrix(0.00217393,0.372211,0.437519,0.997496,1204.28,-527.395)">
+            <rect x="1441.8" y="512.274" width="46.636" height="55.016" style="fill:rgb(73,60,56);"/>
+        </g>
+        <g transform="matrix(0.806913,-0.252708,0.252708,0.806913,157.435,543.885)">
+            <path d="M1476.14,504.07L1461.74,504.07L1461.74,530.643L1468.86,524.107L1476.14,530.643L1476.14,504.07Z" style="fill:rgb(199,65,67);"/>
+        </g>
+    </g>
+</svg>

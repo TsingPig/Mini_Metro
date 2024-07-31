@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="FireIcon" transform="matrix(12.493,0,0,12.493,-27604.5,-12423.4)">
+        <g id="FireIcon1" serif:id="FireIcon" transform="matrix(1,0,0,1,-0.0338619,0)">
+            <path d="M2222.35,1022.74C2214.32,1015.74 2220.31,1009.07 2221.41,1003.67C2222.82,1005.04 2222.51,1008.15 2222.51,1008.15C2222.51,1008.15 2228.02,1004.05 2227.8,995.755C2234.3,998.554 2235.35,1005.8 2235.35,1005.8C2235.35,1005.8 2236.72,1004 2236.03,1000.82C2246.89,1011.62 2240.35,1021.82 2236.8,1022.74L2222.35,1022.74Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.488053,0,0,0.394836,1200.71,626.093)">
+            <path d="M2132.57,1015.95C2132.57,1014.19 2131.42,1012.77 2130,1012.77L2088.32,1012.77C2086.91,1012.77 2085.76,1014.19 2085.76,1015.95L2085.76,1030.14C2085.76,1031.9 2086.91,1033.32 2088.32,1033.32L2130,1033.32C2131.42,1033.32 2132.57,1031.9 2132.57,1030.14L2132.57,1015.95Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="ArrowHeadUpIcon" transform="matrix(22.8539,0,0,22.5834,-4211.75,-73772.4)">
+        <path d="M203.397,3283.54L195.492,3275.63L187.588,3283.54C186.995,3284.14 186.034,3284.14 185.442,3283.54C184.849,3282.95 184.849,3281.99 185.442,3281.39L194.388,3272.44C194.692,3272.14 195.093,3271.99 195.492,3272C195.891,3271.99 196.292,3272.14 196.597,3272.44L205.543,3281.39C206.135,3281.99 206.135,3282.95 205.543,3283.54C204.95,3284.14 203.989,3284.14 203.397,3283.54Z" style="fill:white;"/>
+    </g>
+</svg>

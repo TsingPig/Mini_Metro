@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Egg" transform="matrix(1,0,0,1,-779.995,136.728)">
+        <g transform="matrix(2.98767,0,0,2.98767,-1573.37,-1406.26)">
+            <path d="M865.913,499.045C874.258,483.431 858.166,474.949 854.982,459.202C851.797,443.456 838.355,420.822 813.311,428.574C790.485,435.641 787.174,469.453 801.012,486.588C820.997,511.333 857.567,514.659 865.913,499.045Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(2.59119,-1.16479,1.22495,2.72501,-1809.89,-316.574)">
+            <ellipse cx="826.436" cy="458.009" rx="16.569" ry="17.449" style="fill:rgb(255,155,0);"/>
+        </g>
+        <g transform="matrix(1.59318,-0.716165,0.753152,1.67546,-759.773,-215.216)">
+            <ellipse cx="826.436" cy="458.009" rx="16.569" ry="17.449" style="fill:rgb(250,181,30);"/>
+        </g>
+    </g>
+</svg>

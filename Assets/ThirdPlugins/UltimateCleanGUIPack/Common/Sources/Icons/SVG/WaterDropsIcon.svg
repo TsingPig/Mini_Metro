@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="WaterDropsIcon" transform="matrix(4.32653,0,0,4.32653,-6523.54,-3367.34)">
+        <g id="Water-Icon" serif:id="Water Icon" transform="matrix(-0.481601,0,0,0.528648,2081.8,486.784)">
+            <path d="M1036.26,564.238C913.28,699.759 975.122,766.124 1036.26,766.124C1097.4,766.124 1160.13,698.384 1036.26,564.238ZM1030.86,600.64C991.583,689.586 1005.2,718.915 1015.05,745.271C999.391,736.095 944.44,701.478 1030.86,600.64Z" style="fill:white;"/>
+        </g>
+        <g id="Water-Icon1" serif:id="Water Icon" transform="matrix(1,0,0,1,-295.097,-6.63577)">
+            <path d="M1834.07,872.955C1812.93,869.198 1795.69,841.327 1839.05,789.782C1845.49,797.575 1850.59,804.816 1854.53,811.508C1836.31,837.728 1831.47,858.225 1834.07,872.955Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

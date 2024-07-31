@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="GemDiamondPurpleIcon" transform="matrix(4.83083,-1.53475e-16,-2.4556e-15,4.83083,12.0431,61.6784)">
+        <path d="M17.53,0.432L0.5,22.981C12.519,26.391 24.442,29.394 34.124,22.981C30.912,14.969 27.466,7.007 17.53,0.432Z" style="fill:rgb(183,126,220);fill-rule:nonzero;"/>
+        <path d="M50.923,0.452C41.311,8.342 38.335,15.619 34.092,22.981C45.153,23.264 56.148,25.102 67.313,22.981C62.263,15.471 57.872,7.96 50.923,0.452Z" style="fill:rgb(238,199,254);fill-rule:nonzero;"/>
+        <path d="M84.343,0.442C74.311,8.078 72.455,15.483 67.313,22.981C78.766,25.173 89.476,23.195 100.5,22.981L84.343,0.442Z" style="fill:rgb(192,130,233);fill-rule:nonzero;"/>
+        <path d="M67.313,22.981L84.343,0.442L50.912,0.442L67.313,22.981Z" style="fill:rgb(220,162,248);fill-rule:nonzero;"/>
+        <path d="M34.124,22.981L50.95,0.442L17.53,0.442L34.124,22.981Z" style="fill:rgb(211,157,238);fill-rule:nonzero;"/>
+        <path d="M0.5,22.981L51.645,80.019C52.751,60.222 51.108,40.736 34.124,22.981L0.5,22.981Z" style="fill:rgb(214,156,244);fill-rule:nonzero;"/>
+        <path d="M34.124,22.981L51.641,80C61.534,63.115 69.703,45.447 67.313,22.981L34.124,22.981Z" style="fill:rgb(190,128,227);fill-rule:nonzero;"/>
+        <path d="M100.5,22.981L51.637,80.001L67.313,22.981L100.5,22.981Z" style="fill:rgb(213,158,243);fill-rule:nonzero;"/>
+    </g>
+</svg>

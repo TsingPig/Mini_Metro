@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Checkmark-Round--Bold-" serif:id="Checkmark Round (Bold)" transform="matrix(15.978,0,0,15.978,-20.4575,51.7727)">
+        <g transform="matrix(0.707107,-0.707107,0.818348,0.818348,-9.09029,8.12868)">
+            <path d="M10.591,11.522C10.591,9.795 8.967,8.392 6.968,8.392C4.969,8.392 3.345,9.795 3.345,11.522L3.345,21.474C3.345,23.201 4.969,24.604 6.968,24.604C8.967,24.604 10.591,23.201 10.591,21.474L10.591,11.522Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(-0.707107,-0.707107,-1.30075,1.30075,47.7433,-3.76131)">
+            <path d="M10.591,10.361C10.591,9.274 8.967,8.392 6.968,8.392C4.969,8.392 3.345,9.274 3.345,10.361L3.345,22.635C3.345,23.722 4.969,24.604 6.968,24.604C8.967,24.604 10.591,23.722 10.591,22.635L10.591,10.361Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

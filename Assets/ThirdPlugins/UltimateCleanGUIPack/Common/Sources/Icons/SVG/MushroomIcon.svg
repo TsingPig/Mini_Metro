@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="MushroomIcon" transform="matrix(6.53982,0,0,6.53982,-9394.26,-5278.37)">
+        <g transform="matrix(0.933826,0,0,0.933826,-8074.32,-2146.13)">
+            <path d="M10212.5,3226.12C10221.6,3228.45 10231.8,3228.62 10240.9,3226.57L10240.9,3230.2C10240.9,3238.04 10234.5,3244.41 10226.7,3244.41C10218.8,3244.41 10212.5,3238.04 10212.5,3230.2L10212.5,3226.12Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.780743,0,0,1.3355,330.253,-268.448)">
+            <path d="M1467.02,806.72C1489.07,806.72 1506.66,817.165 1506.96,831.262C1507.44,853.332 1427.62,852.375 1427.07,831.262C1426.7,817.167 1444.97,806.72 1467.02,806.72Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

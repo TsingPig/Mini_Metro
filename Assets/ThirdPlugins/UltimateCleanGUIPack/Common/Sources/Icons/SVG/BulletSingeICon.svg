@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="BulletSingeICon" transform="matrix(23.6652,0,0,23.6652,-17666.3,-15371.4)">
+        <g transform="matrix(0.78264,0,0,0.680985,164.894,213.008)">
+            <path d="M760.951,651.495C760.951,645.097 758.46,641.524 757.215,641.524C755.97,641.524 752.983,644.578 752.983,651.495L752.983,667.031C752.983,667.048 752.995,667.062 753.01,667.062C753.498,667.062 760.437,667.062 760.924,667.062C760.939,667.062 760.951,667.048 760.951,667.031C760.951,666.346 760.951,654.501 760.951,651.495Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1.31214,0,0,1.52833,-236.558,-348.595)">
+            <path d="M760.372,665.364C760.372,665.197 760.214,665.062 760.019,665.062L754.882,665.062C754.688,665.062 754.53,665.197 754.53,665.364L754.53,666.715C754.53,666.881 754.688,667.017 754.882,667.017L760.019,667.017C760.214,667.017 760.372,666.881 760.372,666.715L760.372,665.364Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>
