@@ -1,16 +1,22 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
-    public float width = 20f; 
+    public float lineWidth = 20f; 
+    public Color lineColor = Color.white;
+
     public GameObject linePrefab;
+
+
     private GameObject _currentLine;
     private RectTransform _lineRectTransform;
 
     public void OnPointerDown(PointerEventData eventData)
     {
         _currentLine = Instantiate(linePrefab, transform);
+        _currentLine.GetComponent<Image>().color = lineColor;
         _lineRectTransform = _currentLine.GetComponent<RectTransform>();
         _lineRectTransform.position = transform.position;
         _lineRectTransform.sizeDelta = Vector2.zero;
@@ -39,7 +45,7 @@ public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
             Vector2 endPos = localPoint;
 
             // 更新线条的大小和位置
-            Vector2 sizeDelta = new Vector2(Vector2.Distance(startPos, endPos), width); 
+            Vector2 sizeDelta = new Vector2(Vector2.Distance(startPos, endPos), lineWidth); 
             _lineRectTransform.sizeDelta = sizeDelta;
             _lineRectTransform.pivot = new Vector2(0, 0.5f);
             _lineRectTransform.anchoredPosition = startPos;

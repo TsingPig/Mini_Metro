@@ -13,11 +13,13 @@ public enum CityNodeType
 
 public class CityNode : MonoBehaviour, IPointerDownHandler
 {
-    public CityNodeType cityNodeType;
+    public Sprite[] cityNodeFillTextures;
+    public Sprite[] cityNodeOutlineTextures;
+
     public string cityNodeName;
+    public CityNodeType cityNodeType;
     public Button cityNodeButton;
     public GameObject ripplePrefab;
-    public bool selected = false;
 
 
     public MetroLine MetroLine => _metroLine;
@@ -33,18 +35,13 @@ public class CityNode : MonoBehaviour, IPointerDownHandler
 
     void Start()
     {
-        //cityNodeButton.onClick.AddListener(() =>
-        //{
-        //    StartRipple();
-        //});
+        transform.GetChild(0).GetComponent<Image>().sprite = cityNodeFillTextures[(int)cityNodeType];
+        transform.GetChild(1).GetComponent<Image>().sprite = cityNodeOutlineTextures[(int)cityNodeType];
     }
 
     private void Update()
     {
-        if(selected)
-        {
-            Debug.Log("selected");
-        }
+
     }
 
     private async void StartRipple()

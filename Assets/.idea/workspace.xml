@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5c10074-c65e-4df0-a429-394a4fd96765" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Scenes/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Scenes/Test.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Business/CityNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Business/CityNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Business/MetroLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Business/MetroLine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Config/StrDef.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Config/Str.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Business/Effect/LineDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Business/Effect/LineDrawer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,14 +26,14 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/TsingPig/.conda/envs/unity_py_3.7",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/TsingPig/.conda/envs/unity_py_3.7&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\--UnityProject\__Games\Mini_Metro\Assets\Scripts\Tools" />

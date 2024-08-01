@@ -19,6 +19,8 @@ v0.1.0
 
     <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240801123439127.png" alt="image-20240801123439127" style="zoom:33%;" />
 
- 3. Ripple效果 （城市节点点击产生涟漪）
+	3. Ripple效果 （城市节点点击产生涟漪）
 
     <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240801154103706.png" alt="image-20240801154103706" style="zoom:33%;" />
+
+	4. **LineDrawer.cs** 地铁线条绘制效果
