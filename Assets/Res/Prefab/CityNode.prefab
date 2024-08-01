@@ -287,3 +287,4 @@ MonoBehaviour:
   lineWidth: 20
   lineColor: {r: 0, g: 0, b: 0, a: 1}
   linePrefab: {fileID: 4748673646940761833, guid: 7ca8ad53f67479a478ab82eb8059c603, type: 3}
+  lineRoot: {fileID: 0}
