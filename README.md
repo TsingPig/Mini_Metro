@@ -1,20 +1,20 @@
 # Mini_Metro
-This is the game which developed by Unity3D 2021, to try to simulate the game 'Mini-Metro' as well as add our own creations.
+这是一款用Unity2021开发的，模仿 《模拟地图》游戏的独立游戏。
+
+作者：TsingPig
 
 
 
 # 开发日志
 
-v0.1版本
+v0.1.0
 
-1. 素材绘制脚本 **DrawPolygon.py**
+素材导入
 
-    <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240731213640990.png" alt="image-20240731213640990" style="zoom:25%;" />
+1. CityNodeTexture绘制组件 **DrawPolygon.py**
 
-2. 拖动组件设计
+    <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240731221151103.png" alt="image-20240731221151103" style="zoom:50%;" />
 
-3. 动态效果：
+2. 创建瓦片贴图
 
-    节点触碰特效（当前线路颜色弹出 + 波浪提示）	
-
-​	4. 自动路径磁吸效果
+    <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240801120453197.png" alt="image-20240801120453197" style="zoom:50%;" />
