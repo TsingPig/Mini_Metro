@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public enum CityNodeType
 {
@@ -15,7 +13,25 @@ public class CityNode : MonoBehaviour
 {
     public CityNodeType cityNodeType;
     public string cityNodeName;
-    public MetroLine MetroLine => _metroLine;
+    public Button cityNodeButton;
+    public GameObject ripplePrefab;
 
     private MetroLine _metroLine;
+    private RippleEffect rippleEffect;
+
+    public MetroLine MetroLine => _metroLine;
+
+    void Start()
+    {
+
+
+        cityNodeButton.onClick.AddListener(() =>
+        {
+            GameObject ripple = Instantiate(ripplePrefab, transform);
+            rippleEffect = ripple.GetComponent<RippleEffect>();
+            Vector2 clickPosition;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(cityNodeButton.GetComponent<RectTransform>(), Input.mousePosition, null, out clickPosition);
+            rippleEffect.PlayRipple(cityNodeButton.transform.TransformPoint(clickPosition));
+        });
+    }
 }
