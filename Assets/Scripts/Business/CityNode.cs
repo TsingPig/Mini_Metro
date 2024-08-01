@@ -1,3 +1,6 @@
+using Michsky.MUIP;
+using System.Threading.Tasks;
+using TsingPigSDK;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,11 +30,16 @@ public class CityNode : MonoBehaviour
 
         cityNodeButton.onClick.AddListener(() =>
         {
-            GameObject ripple = Instantiate(ripplePrefab, transform);
-            rippleEffect = ripple.GetComponent<RippleEffect>();
-            Vector2 clickPosition;
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(cityNodeButton.GetComponent<RectTransform>(), Input.mousePosition, null, out clickPosition);
-            rippleEffect.PlayRipple(cityNodeButton.transform.TransformPoint(clickPosition));
+            A();
+
         });
+    }
+
+    private async void A()
+    {
+        GameObject ripple = await Instantiater.InstantiateAsync(StrDef.Ripple, cityNodeButton.GetComponent<RectTransform>().transform);
+        rippleEffect = ripple.GetComponent<RippleEffect>();
+        rippleEffect.PlayRipple(new Vector2(cityNodeButton.transform.position.x,
+                                cityNodeButton.transform.position.y));
     }
 }

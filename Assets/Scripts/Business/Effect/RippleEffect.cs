@@ -1,3 +1,5 @@
+using System;
+using TsingPigSDK;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -41,8 +43,7 @@ public class RippleEffect : MonoBehaviour
         else
         {
             rippleImage.enabled = false;
-            
-            Destroy(gameObject);
+            Instantiater.DeactivateObject(gameObject);
         }
     }
 }
