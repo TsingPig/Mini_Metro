@@ -5,34 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5c10074-c65e-4df0-a429-394a4fd96765" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Res/Tile Palette/CityNode.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/TileMap/CityNode/circle_outline.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/TileMap/CityNode/circle_solid.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/TileMap/CityNode/diamond_outline.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/TileMap/CityNode/diamond_solid.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/TileMap/CityNode/rounded_rectangle_outline.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/TileMap/CityNode/rounded_rectangle_solid.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/TileMap/CityNode/triangle_outline.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/TileMap/CityNode/triangle_solid.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Scenes/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Scenes/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNodeTexture/circle_outline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/circle_outline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNodeTexture/circle_solid.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/circle_solid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNodeTexture/diamond_outline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/diamond_outline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNodeTexture/diamond_solid.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/diamond_solid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNodeTexture/rounded_rectangle_outline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/rounded_rectangle_outline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNodeTexture/rounded_rectangle_solid.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/rounded_rectangle_solid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNodeTexture/triangle_outline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/triangle_outline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNodeTexture/triangle_solid.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/triangle_solid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/TileMap/Background.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Tile Palette/Background.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/TileMap/Blue.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Res/TileMap/Background/Blue.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/TileMap/Brown.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Res/TileMap/Background/Brown.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/TileMap/Gray.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Res/TileMap/Background/Gray.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/TileMap/Green.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Res/TileMap/Background/Green.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/TileMap/Pink.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Res/TileMap/Background/Pink.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/TileMap/Purple.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Res/TileMap/Background/Purple.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Texture/TileMap/Yellow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Res/TileMap/Background/Yellow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Tools/DrawPolygon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Tools/DrawPolygon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Business/CityNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Business/CityNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Business/MetroLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Business/MetroLine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Config/StrDef.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Config/Str.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

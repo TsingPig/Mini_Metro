@@ -1,7 +1,6 @@
-using Michsky.MUIP;
-using System.Threading.Tasks;
 using TsingPigSDK;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public enum CityNodeType
@@ -12,34 +11,49 @@ public enum CityNodeType
     Diamond = 3
 }
 
-public class CityNode : MonoBehaviour
+public class CityNode : MonoBehaviour, IPointerDownHandler
 {
     public CityNodeType cityNodeType;
     public string cityNodeName;
     public Button cityNodeButton;
     public GameObject ripplePrefab;
+    public bool selected = false;
 
-    private MetroLine _metroLine;
-    private RippleEffect rippleEffect;
 
     public MetroLine MetroLine => _metroLine;
 
+    private MetroLine _metroLine;
+    private RippleEffect _rippleEffect;
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        StartRipple();
+    }
+
+
     void Start()
     {
-
-
-        cityNodeButton.onClick.AddListener(() =>
-        {
-            A();
-
-        });
+        //cityNodeButton.onClick.AddListener(() =>
+        //{
+        //    StartRipple();
+        //});
     }
 
-    private async void A()
+    private void Update()
     {
-        GameObject ripple = await Instantiater.InstantiateAsync(StrDef.Ripple, cityNodeButton.GetComponent<RectTransform>().transform);
-        rippleEffect = ripple.GetComponent<RippleEffect>();
-        rippleEffect.PlayRipple(new Vector2(cityNodeButton.transform.position.x,
+        if(selected)
+        {
+            Debug.Log("selected");
+        }
+    }
+
+    private async void StartRipple()
+    {
+        GameObject ripple = await Instantiater.InstantiateAsync(Str.Ripple, cityNodeButton.GetComponent<RectTransform>().transform);
+        _rippleEffect = ripple.GetComponent<RippleEffect>();
+        _rippleEffect.PlayRipple(new Vector2(cityNodeButton.transform.position.x,
                                 cityNodeButton.transform.position.y));
     }
+
+  
 }

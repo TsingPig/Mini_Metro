@@ -15,6 +15,10 @@ v0.1.0
 
     <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240731221151103.png" alt="image-20240731221151103" style="zoom:50%;" />
 
-2. 创建瓦片贴图
+2. 创建瓦片贴图（弃用）
 
     <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240801123439127.png" alt="image-20240801123439127" style="zoom:33%;" />
+
+ 3. Ripple效果 （城市节点点击产生涟漪）
+
+    <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240801154103706.png" alt="image-20240801154103706" style="zoom:33%;" />

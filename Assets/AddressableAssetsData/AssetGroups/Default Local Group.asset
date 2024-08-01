@@ -16,7 +16,11 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: d32bb42f2f769ac41be7c2b36ff7e58d
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 6ee32f54a3e93f641b595911043bc59a
+    m_Address: Ripple
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c953c7481fc596b4aaffa4b05fbeb43a, type: 2}
   m_SchemaSet:
