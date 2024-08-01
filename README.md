@@ -17,4 +17,4 @@ v0.1.0
 
 2. 创建瓦片贴图
 
-    <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240801120453197.png" alt="image-20240801120453197" style="zoom:50%;" />
+    <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240801123439127.png" alt="image-20240801123439127" style="zoom:33%;" />

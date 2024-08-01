@@ -42,7 +42,7 @@ def main():
     radius = min(size) // 2 - 20
     color_fill = (255, 255, 255, 255)
     color_outline = (255, 255, 255, 255)
-    width = width // 15
+    width = width // 8
 
     shapes = [
         ("circle_solid.png", "circle", {'center': center, 'radius': radius, 'fill': color_fill}),
@@ -50,12 +50,12 @@ def main():
         ("rounded_rectangle_solid.png", "rounded_rectangle", {'top_left': (20, 20), 'bottom_right': (size[0] - 20, size[1] - 20), 'radius': 20, 'fill': color_fill}),
         ("rounded_rectangle_outline.png", "rounded_rectangle", {'top_left': (20, 20), 'bottom_right': (size[0] - 20, size[1] - 20), 'radius': 20, 'outline': color_outline, 'width': width}),
         ("triangle_solid.png", "triangle", {'center': center, 'size': size[0] - 40, 'fill': color_fill}),
-        ("triangle_outline.png", "triangle", {'center': center, 'size': size[0] - 40, 'outline': color_outline, 'width': width}),
+        ("triangle_outline.png", "triangle", {'center': center, 'size': size[0] - 40, 'outline': color_outline, 'width': width * 9 // 11}),
         ("diamond_solid.png", "diamond", {'center': center, 'width_height': size[0] - 40, 'fill': color_fill}),
-        ("diamond_outline.png", "diamond", {'center': center, 'width_height': size[0] - 40, 'outline': color_outline, 'width': width}),
+        ("diamond_outline.png", "diamond", {'center': center, 'width_height': size[0] - 40, 'outline': color_outline, 'width': width * 9 // 11}),
     ]
 
-    save_directory = os.path.join("..", "..", "Res", "Texture", "CityNodeTexture")
+    save_directory = os.path.join("..", "..", "Res", "Texture", "CityNode")
     os.makedirs(save_directory, exist_ok=True)
 
     for filename, shape, params in shapes:
