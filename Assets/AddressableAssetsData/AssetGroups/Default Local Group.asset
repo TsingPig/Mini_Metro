@@ -21,6 +21,10 @@ MonoBehaviour:
     m_Address: Ripple
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 89df1e1e05cd03849a6657ff5af1a23d
+    m_Address: MainView
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c953c7481fc596b4aaffa4b05fbeb43a, type: 2}
   m_SchemaSet:

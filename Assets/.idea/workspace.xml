@@ -7,6 +7,10 @@
     <list default="true" id="b5c10074-c65e-4df0-a429-394a4fd96765" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Scenes/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Scenes/Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNode/diamond_outline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/diamond_outline.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNode/diamond_solid.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/diamond_solid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNode/triangle_outline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/triangle_outline.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Texture/CityNode/triangle_solid.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Texture/CityNode/triangle_solid.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Business/CityNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Business/CityNode.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Business/Effect/LineDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Business/Effect/LineDrawer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
