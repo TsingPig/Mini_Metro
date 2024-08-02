@@ -7,7 +7,7 @@
 
 # 开发日志
 
-v0.1.0
+## v0.1.0 版本
 
 素材导入
 
@@ -24,3 +24,12 @@ v0.1.0
     <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240801154103706.png" alt="image-20240801154103706" style="zoom:33%;" />
 
 	4. **LineDrawer.cs** 地铁线条绘制效果
+
+    ![image-20240801204633601](C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240801204633601.png)
+
+## v0.2.0 版本
+
+1. 导入MVP框架
+
+2. 铁线路生成逻辑
+
