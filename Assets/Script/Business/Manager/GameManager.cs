@@ -19,6 +19,7 @@ public class GameManager : Singleton<GameManager>
         base.Awake();
         Initialize();
     }
+
     public void ApplicationEntry()
     {
         UIManager.Instance.Enter(ViewId.MainView);

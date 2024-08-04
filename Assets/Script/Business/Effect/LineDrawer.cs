@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+[Obsolete]
 public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
     public float lineWidth = 20f;

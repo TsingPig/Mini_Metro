@@ -1,5 +1,6 @@
 using MVPFrameWork;
-public interface IMainPresenter : IPresenter {
-    void GenerateCityNodes();
 
+public interface IMainPresenter : IPresenter
+{
+    void GenerateCityNodes();
 }

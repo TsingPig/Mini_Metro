@@ -8,7 +8,6 @@ public class MetroLineManager : Singleton<MetroLineManager>
 {
     public List<MetroLine> metroLines;
 
-
     [HideInInspector] public RectTransform metroLineRoot;
     public GameObject linePrefab;
 
@@ -25,7 +24,6 @@ public class MetroLineManager : Singleton<MetroLineManager>
         Initialize();
     }
 
-
     public MetroLine CreateMetroLine()
     {
         GameObject metroLineObj = new GameObject($"MetroLine{metroLines.Count}");
@@ -38,7 +36,6 @@ public class MetroLineManager : Singleton<MetroLineManager>
     [Button("CreateMetroLine")]
     public void CreateMetroLine(List<CityNode> cityNodes, Color metroLineColor)
     {
-
         GameObject metroLineObj = new GameObject($"MetroLine{metroLines.Count}");
         metroLineObj.transform.parent = metroLineRoot;
 
@@ -53,13 +50,12 @@ public class MetroLineManager : Singleton<MetroLineManager>
         foreach(CityNode cityNode in cityNodes)
         {
             cityNode.MetroLine = metroLine;
-
         }
         for(int i = 0; i < cityNodes.Count - 1; i++)
         {
             DrawLineBetween(cityNodes[i].GetComponent<RectTransform>(),
-                            cityNodes[i + 1].GetComponent<RectTransform>(), 
-                            metroLine.GetComponent<RectTransform>(), 
+                            cityNodes[i + 1].GetComponent<RectTransform>(),
+                            metroLine.GetComponent<RectTransform>(),
                             metroLineColor, metroLineWidth);
         }
     }
@@ -87,4 +83,6 @@ public class MetroLineManager : Singleton<MetroLineManager>
         float angle = Mathf.Atan2(endLocalPoint.y - startLocalPoint.y, endLocalPoint.x - startLocalPoint.x) * Mathf.Rad2Deg;
         lineRectTransform.localRotation = Quaternion.Euler(0, 0, angle);
     }
+
+    
 }

@@ -1,9 +1,7 @@
-using System;
 using TsingPigSDK;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-
 
 public enum CityNodeType
 {
@@ -17,31 +15,28 @@ public class CityNode : MonoBehaviour, IPointerDownHandler
 {
     public Sprite[] cityNodeFillTextures;
     public Sprite[] cityNodeOutlineTextures;
-    
+
     public string cityNodeName;
     public CityNodeType cityNodeType;
     public Button cityNodeButton;
     public GameObject ripplePrefab;
 
     public MetroLine MetroLine { get => _metroLine; set => _metroLine = value; }
-    
+
     private MetroLine _metroLine;
     private RippleEffect _rippleEffect;
-
 
     public void OnPointerDown(PointerEventData eventData)
     {
         StartRipple();
     }
 
-
-    void Start()
+    private void Start()
     {
     }
 
     private void Update()
     {
-
     }
 
     private async void StartRipple()

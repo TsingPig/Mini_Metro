@@ -164,7 +164,6 @@ GameObject:
   - component: {fileID: 7306392041809140586}
   - component: {fileID: 7306392041809140588}
   - component: {fileID: 7306392041809140587}
-  - component: {fileID: 7306392041809140584}
   m_Layer: 5
   m_Name: CityNode
   m_TagString: CityNode
@@ -272,19 +271,3 @@ MonoBehaviour:
   cityNodeType: 0
   cityNodeButton: {fileID: 7306392041809140588}
   ripplePrefab: {fileID: 4367752974190513918, guid: 6ee32f54a3e93f641b595911043bc59a, type: 3}
---- !u!114 &7306392041809140584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7306392041809140590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e77bb1a8f3040f54c996ed03aa8250a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineWidth: 20
-  lineColor: {r: 0, g: 0, b: 0, a: 1}
-  linePrefab: {fileID: 4748673646940761833, guid: 7ca8ad53f67479a478ab82eb8059c603, type: 3}
-  lineRoot: {fileID: 0}
