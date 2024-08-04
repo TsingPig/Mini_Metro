@@ -29,6 +29,10 @@ MonoBehaviour:
     m_Address: CityNode
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 7ca8ad53f67479a478ab82eb8059c603
+    m_Address: Line
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c953c7481fc596b4aaffa4b05fbeb43a, type: 2}
   m_SchemaSet:

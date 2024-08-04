@@ -25,11 +25,13 @@
 
 	4. **LineDrawer.cs** 地铁线条绘制效果
 
-    ![image-20240801204633601](C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240801204633601.png)
+    <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240803203843705.png" alt="image-20240803203843705" style="zoom:33%;" />
 
 ## v0.2.0 版本
 
 1. 导入MVP框架，改用AA加载资源
 
-2. 铁线路生成逻辑
+2. 地铁线路生成管理器 **MetroLineManager.cs**
+
+    <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240803203858611.png" alt="image-20240803203858611" style="zoom:25%;" />
 

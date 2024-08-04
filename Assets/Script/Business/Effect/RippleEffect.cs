@@ -1,4 +1,3 @@
-using System;
 using TsingPigSDK;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +12,7 @@ public class RippleEffect : MonoBehaviour
     private RectTransform rippleTransform;
     private float elapsedTime;
 
-    void Awake()
+    private void Awake()
     {
         rippleImage = gameObject.GetComponent<Image>();
         rippleImage.color = rippleColor;
@@ -29,7 +28,7 @@ public class RippleEffect : MonoBehaviour
         rippleImage.enabled = true;
     }
 
-    void Update()
+    private void Update()
     {
         if(elapsedTime < rippleDuration)
         {
