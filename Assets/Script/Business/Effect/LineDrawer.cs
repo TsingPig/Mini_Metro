@@ -12,15 +12,15 @@ public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     public GameObject linePrefab;
     public RectTransform lineRoot;
 
-    private GameObject _currentLine;
-    private RectTransform _lineRectTransform;
+    private GameObject _currentLineObj;
+    private RectTransform _metroLineRoot;
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        _currentLine = Instantiate(linePrefab, lineRoot);
-        _currentLine.GetComponent<Image>().color = lineColor;
-        _lineRectTransform = _currentLine.GetComponent<RectTransform>();
-        _lineRectTransform.sizeDelta = Vector2.zero;
+        _currentLineObj = Instantiate(linePrefab, lineRoot);
+        _currentLineObj.GetComponent<Image>().color = lineColor;
+        _metroLineRoot = _currentLineObj.GetComponent<RectTransform>();
+        _metroLineRoot.sizeDelta = Vector2.zero;
 
         Vector2 localPoint;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(
@@ -29,17 +29,17 @@ public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
             eventData.pressEventCamera,
             out localPoint);
 
-        _lineRectTransform.anchoredPosition = localPoint;
+        _metroLineRoot.anchoredPosition = localPoint;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        _currentLine = null;
+        _currentLineObj = null;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        if(_lineRectTransform != null)
+        if(_metroLineRoot != null)
         {
             Vector2 localPoint;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
@@ -48,18 +48,18 @@ public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
                 eventData.pressEventCamera,
                 out localPoint);
 
-            Vector2 startPos = _lineRectTransform.anchoredPosition;
+            Vector2 startPos = _metroLineRoot.anchoredPosition;
             Vector2 endPos = localPoint;
 
             // 更新线条的大小和位置
             Vector2 sizeDelta = new Vector2(Vector2.Distance(startPos, endPos), lineWidth);
-            _lineRectTransform.sizeDelta = sizeDelta;
-            _lineRectTransform.pivot = new Vector2(0, 0.5f);
-            _lineRectTransform.anchoredPosition = startPos;
+            _metroLineRoot.sizeDelta = sizeDelta;
+            _metroLineRoot.pivot = new Vector2(0, 0.5f);
+            _metroLineRoot.anchoredPosition = startPos;
 
             // 计算旋转角度
             float angle = Mathf.Atan2(endPos.y - startPos.y, endPos.x - startPos.x) * Mathf.Rad2Deg;
-            _lineRectTransform.localRotation = Quaternion.Euler(0, 0, angle);
+            _metroLineRoot.localRotation = Quaternion.Euler(0, 0, angle);
         }
     }
 }

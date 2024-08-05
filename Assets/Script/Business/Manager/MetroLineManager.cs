@@ -6,23 +6,36 @@ using UnityEngine.UI;
 
 public class MetroLineManager : Singleton<MetroLineManager>
 {
-    public List<MetroLine> metroLines;
-
-    [HideInInspector] public RectTransform metroLineRoot;
+    public RectTransform metroLineRoot;
     public GameObject linePrefab;
 
-    public float metroLineWidth = Const.metroLineWidth;
+    public List<MetroLine> metroLines;
 
-    private async void Initialize()
+    [HideInInspector]
+    public List<Color> metroLineColors;
+
+    private int MetroLineCount
     {
-        linePrefab = await Instantiater.InstantiateAsync(Str.LINE_DATA_PATH, transform);
+        get { return metroLines.Count; }
     }
 
-    private void Start()
+    public Color CurrentMetroLineColor
     {
-        metroLines = new List<MetroLine>();
-        Initialize();
+        get
+        {
+            return metroLineColors[MetroLineCount];
+        }
     }
+
+    public RectTransform CurrentMetroLineRoot
+    {
+        get
+        {
+            return metroLineRoot.GetChild(MetroLineCount).GetComponent<RectTransform>();
+        }
+    }
+
+    private float _metroLineWidth = Const.metroLineWidth;
 
     public MetroLine CreateMetroLine()
     {
@@ -56,7 +69,7 @@ public class MetroLineManager : Singleton<MetroLineManager>
             DrawLineBetween(cityNodes[i].GetComponent<RectTransform>(),
                             cityNodes[i + 1].GetComponent<RectTransform>(),
                             metroLine.GetComponent<RectTransform>(),
-                            metroLineColor, metroLineWidth);
+                            metroLineColor, _metroLineWidth);
         }
     }
 
@@ -84,5 +97,37 @@ public class MetroLineManager : Singleton<MetroLineManager>
         lineRectTransform.localRotation = Quaternion.Euler(0, 0, angle);
     }
 
-    
+    private async void Initialize()
+    {
+        linePrefab = await Instantiater.InstantiateAsync(Str.LINE_DATA_PATH, transform);
+        metroLines = new List<MetroLine>();
+        metroLineColors = new List<Color>()
+        {
+            Color.red,
+            Color.green,
+            Color.blue,
+            Color.yellow,
+            Color.magenta,
+            Color.cyan,
+            new Color(1.0f, 0.5f, 0.0f), // Orange
+            new Color(0.5f, 0.0f, 0.5f), // Purple
+            new Color(0.0f, 0.5f, 0.5f), // Teal
+            new Color(0.5f, 0.5f, 0.0f), // Olive
+            new Color(1.0f, 0.75f, 0.8f), // Pink
+            new Color(0.5f, 0.5f, 0.5f), // Gray
+            new Color(0.75f, 0.25f, 0.5f), // Raspberry
+            new Color(0.25f, 0.75f, 0.25f), // Light Green
+            new Color(0.75f, 0.75f, 0.0f), // Mustard
+            new Color(0.0f, 0.75f, 0.75f), // Aqua
+            new Color(0.75f, 0.0f, 0.75f), // Fuchsia
+            new Color(0.75f, 0.25f, 0.0f), // Burnt Orange
+            new Color(0.25f, 0.25f, 0.75f), // Indigo
+            new Color(0.0f, 0.5f, 1.0f) // Sky Blue
+        };
+    }
+
+    private void Start()
+    {
+        Initialize();
+    }
 }
