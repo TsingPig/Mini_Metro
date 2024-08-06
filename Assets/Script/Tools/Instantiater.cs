@@ -102,6 +102,42 @@ namespace TsingPigSDK
             }
         }
 
+        public static GameObject Instantiate(string addressablePath, Transform parent)
+        {
+            List<GameObject> objectPool;
+
+            if(_objectPools.TryGetValue(addressablePath, out objectPool) && objectPool.Count > 0)
+            {
+                foreach(var obj in objectPool)
+                {
+                    if(!obj.activeSelf)
+                    {
+                        obj.SetActive(true);
+                        obj.transform.SetParent(parent);
+                        return obj;
+                    }
+                }
+            }
+
+            AsyncOperationHandle<GameObject> handler = Addressables.InstantiateAsync(addressablePath, parent);
+            handler.WaitForCompletion();
+            GameObject instantiatedObject = handler.Result;
+            if(instantiatedObject != null)
+            {
+                if(!_objectPools.ContainsKey(addressablePath))
+                {
+                    _objectPools[addressablePath] = new List<GameObject>();
+                }
+                _objectPools[addressablePath].Add(instantiatedObject);
+                return instantiatedObject;
+            }
+            else
+            {
+                Debug.LogError($"{addressablePath} GameObject找不到文件位置");
+                return null;
+            }
+        }
+
         public static void DeactivateObjectPool(string addressablePath)
         {
             if(_objectPools.ContainsKey(addressablePath))

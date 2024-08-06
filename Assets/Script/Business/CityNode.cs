@@ -1,8 +1,6 @@
-using System.Threading.Tasks;
 using TsingPigSDK;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public enum CityNodeType
@@ -52,7 +50,7 @@ public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
     private MetroLine _metroLine = null;
     private RippleEffect _rippleEffect;
 
-    public async void OnPointerDown(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
         if(MetroLineManager.Instance.isDrag == false)
         {
@@ -64,11 +62,9 @@ public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
 
             Vector2 endLocalPoint;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, eventData.position, eventData.pressEventCamera, out endLocalPoint);
-            await MetroLineManager.Instance.DrawLine(StartLocalPoint);
+            MetroLineManager.Instance.DrawLine(StartLocalPoint);
             MetroLineManager.Instance.UpdateLineEnd(endLocalPoint);
-
         }
-
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -88,8 +84,9 @@ public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
         }
     }
 
-    public async void OnPointerEnter(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
     {
+        Debug.Log("OnPointerEnter");
         if(MetroLineManager.Instance.isDrag)
         {
             if(!MetroLineManager.Instance.CurrentMetroLine.cityNodes.Contains(this))
@@ -98,9 +95,8 @@ public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
                 StartRipple();
                 MetroLineManager.Instance.CurrentMetroLine.cityNodes.Add(this);
                 MetroLineManager.Instance.UpdateLineEnd(EndLocalPoint);
-                
-                await MetroLineManager.Instance.DrawLine(StartLocalPoint);
-                Debug.Log("OnPointerEnter");
+
+                MetroLineManager.Instance.DrawLine(StartLocalPoint);
 
                 MetroLineManager.Instance.isDrag = true;
             }
@@ -128,6 +124,4 @@ public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
         transform.GetChild(0).GetComponent<Image>().sprite = cityNodeFillTextures[(int)cityNodeType];
         transform.GetChild(1).GetComponent<Image>().sprite = cityNodeOutlineTextures[(int)cityNodeType];
     }
-
-
 }

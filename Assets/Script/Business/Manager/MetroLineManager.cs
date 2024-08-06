@@ -1,4 +1,3 @@
-using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TsingPigSDK;
@@ -13,18 +12,15 @@ public class MetroLineManager : Singleton<MetroLineManager>
 
     public Vector2 StartLocalPoint
     {
-
         get { return _startLocalPoint; }
         set { _startLocalPoint = value; }
     }
 
     public Vector2 EndLocalPoint
     {
-
         get { return _endLocalPoint; }
         set { _endLocalPoint = value; }
     }
-
 
     public bool isDrag = false;
 
@@ -89,6 +85,10 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
     }
 
+    /// <summary>
+    /// 创建新的地铁线路
+    /// </summary>
+    /// <returns></returns>
     public MetroLine CreateMetroLine()
     {
         GameObject metroLineObj = new GameObject($"MetroLine{metroLines.Count}");
@@ -99,11 +99,41 @@ public class MetroLineManager : Singleton<MetroLineManager>
         return metroLine;
     }
 
+    /// <summary>
+    /// 绘制线条
+    /// </summary>
+    /// <param name="startLocalPoint"></param>
+    /// <returns></returns>
+    public void DrawLine(Vector2 startLocalPoint)
+    {
+        RectTransform lineRoot = CurrentMetroLineRoot;
+        Color color = CurrentMetroLineColor;
+
+        //_currentLineObj = await Instantiater.InstantiateAsync(Str.LINE_PREFAB_DATA_PATH, lineRoot);
+        _currentLineObj = Instantiater.Instantiate(Str.LINE_PREFAB_DATA_PATH, lineRoot);
+        _currentLineObj.GetComponent<Image>().color = color;
+
+        RectTransform lineRectTransform = _currentLineObj.GetComponent<RectTransform>();
+        lineRectTransform.sizeDelta = Vector2.zero;
+
+        _startLocalPoint = startLocalPoint;
+        Vector2 sizeDelta = new Vector2(Vector2.Distance(_startLocalPoint, _endLocalPoint), Const.metroLineWidth);
+        lineRectTransform.sizeDelta = sizeDelta;
+        lineRectTransform.pivot = new Vector2(0, 0.5f);
+        lineRectTransform.anchoredPosition = _startLocalPoint;
+
+        float angle = Mathf.Atan2(_endLocalPoint.y - _startLocalPoint.y, _endLocalPoint.x - _startLocalPoint.x) * Mathf.Rad2Deg;
+        lineRectTransform.localRotation = Quaternion.Euler(0, 0, angle);
+    }
+
+    /// <summary>
+    /// 更新线条终点
+    /// </summary>
+    /// <param name="endLocalPoint"></param>
     public void UpdateLineEnd(Vector2 endLocalPoint)
     {
         if(_currentLineObj != null)
         {
-
             RectTransform lineRectTransform = _currentLineObj.GetComponent<RectTransform>();
             lineRectTransform.sizeDelta = Vector2.zero;
 
@@ -117,28 +147,6 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
     }
 
-    public async Task DrawLine(Vector2 startLocalPoint)
-    {
-
-        RectTransform lineRoot = CurrentMetroLineRoot;
-        Color color = CurrentMetroLineColor;
-
-        _currentLineObj = await Instantiater.InstantiateAsync(Str.LINE_PREFAB_DATA_PATH, lineRoot);
-        _currentLineObj.GetComponent<Image>().color = color;
-
-        RectTransform lineRectTransform = _currentLineObj.GetComponent<RectTransform>();
-        lineRectTransform.sizeDelta = Vector2.zero;
-
-
-        _startLocalPoint = startLocalPoint;
-        Vector2 sizeDelta = new Vector2(Vector2.Distance(_startLocalPoint, _endLocalPoint), Const.metroLineWidth);
-        lineRectTransform.sizeDelta = sizeDelta;
-        lineRectTransform.pivot = new Vector2(0, 0.5f);
-        lineRectTransform.anchoredPosition = _startLocalPoint;
-
-        float angle = Mathf.Atan2(_endLocalPoint.y - _startLocalPoint.y, _endLocalPoint.x - _startLocalPoint.x) * Mathf.Rad2Deg;
-        lineRectTransform.localRotation = Quaternion.Euler(0, 0, angle);
-    }
 
     private void Initialize()
     {
