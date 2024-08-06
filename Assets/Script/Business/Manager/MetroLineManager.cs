@@ -89,9 +89,27 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
     }
 
+
+    public void UpdateLinePosition(Vector2 startLocalPoint, Vector2 endLocalPoint)
+    {
+        if(_currentLineObj != null)
+        {
+
+            RectTransform lineRectTransform = _currentLineObj.GetComponent<RectTransform>();
+            lineRectTransform.sizeDelta = Vector2.zero;
+
+            Vector2 sizeDelta = new Vector2(Vector2.Distance(startLocalPoint, endLocalPoint), Const.metroLineWidth);
+            lineRectTransform.sizeDelta = sizeDelta;
+            lineRectTransform.anchoredPosition = startLocalPoint;
+
+            float angle = Mathf.Atan2(endLocalPoint.y - startLocalPoint.y, endLocalPoint.x - startLocalPoint.x) * Mathf.Rad2Deg;
+            lineRectTransform.localRotation = Quaternion.Euler(0, 0, angle);
+
+        }
+    }
+
     public async Task DrawLineBetween(Vector2 startLocalPoint, Vector2 endLocalPoint, RectTransform lineRoot, Color color)
     {
-        // if(_currentLineObj) Instantiater.DeactivateObject(_currentLineObj);
         _currentLineObj = await Instantiater.InstantiateAsync(Str.LINE_PREFAB_DATA_PATH, lineRoot);
         _currentLineObj.GetComponent<Image>().color = color;
 
@@ -105,6 +123,8 @@ public class MetroLineManager : Singleton<MetroLineManager>
 
         float angle = Mathf.Atan2(endLocalPoint.y - startLocalPoint.y, endLocalPoint.x - startLocalPoint.x) * Mathf.Rad2Deg;
         lineRectTransform.localRotation = Quaternion.Euler(0, 0, angle);
+    
+        
     }
 
 

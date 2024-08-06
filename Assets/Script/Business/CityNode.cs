@@ -1,4 +1,6 @@
+using System.Threading.Tasks;
 using TsingPigSDK;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -27,10 +29,19 @@ public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
     private RippleEffect _rippleEffect;
 
 
-    public void OnPointerDown(PointerEventData eventData)
+    public async void OnPointerDown(PointerEventData eventData)
     {
         StartRipple();
         MetroLineManager.Instance.CreateMetroLine();
+
+        RectTransform rectTransform = GetComponent<RectTransform>();
+        Vector2 startWorldPoint = rectTransform.position;
+        Vector2 startLocalPoint;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, startWorldPoint, null, out startLocalPoint);
+        Vector2 endLocalPoint;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, eventData.position, eventData.pressEventCamera, out endLocalPoint);
+        await MetroLineManager.Instance.DrawLineBetween(startLocalPoint, endLocalPoint, MetroLineManager.Instance.CurrentMetroLineRoot, MetroLineManager.Instance.CurrentMetroLineColor);
+
         Debug.Log("OnPointerDown");
 
     }
@@ -38,27 +49,18 @@ public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
     public async void OnPointerUp(PointerEventData eventData)
     {
         Debug.Log("OnPointerUp");
-
-        RectTransform rectTransform = GetComponent<RectTransform>();
-
-        // 获取起始坐标（世界坐标）
-        Vector2 startWorldPoint = rectTransform.position;
-
-        // 将世界坐标转换为RectTransform的局部坐标
-        Vector2 startLocalPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, startWorldPoint, null, out startLocalPoint);
-
-        // 将屏幕坐标转换为RectTransform的局部坐标
-        Vector2 endLocalPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, eventData.position, eventData.pressEventCamera, out endLocalPoint);
-
-        await MetroLineManager.Instance.DrawLineBetween(startLocalPoint, endLocalPoint, MetroLineManager.Instance.CurrentMetroLineRoot, MetroLineManager.Instance.CurrentMetroLineColor);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("OnDrag");
-
+        RectTransform rectTransform = GetComponent<RectTransform>();
+        Vector2 startWorldPoint = rectTransform.position;
+        Vector2 startLocalPoint;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, startWorldPoint, null, out startLocalPoint);
+        Vector2 endLocalPoint;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, eventData.position, eventData.pressEventCamera, out endLocalPoint);
+        MetroLineManager.Instance.UpdateLinePosition(startLocalPoint, endLocalPoint);
 
     }
 
