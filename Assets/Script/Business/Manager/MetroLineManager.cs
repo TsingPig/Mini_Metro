@@ -23,7 +23,15 @@ public class MetroLineManager : Singleton<MetroLineManager>
     {
         get
         {
-            return metroLineColors[MetroLineCount];
+            if(MetroLineCount > 0)
+            {
+                return metroLineColors[MetroLineCount];
+            }
+            else
+            {
+                Debug.LogError("MetroLineCount is Zero");
+                return Color.black;
+            }
         }
     }
 
@@ -31,16 +39,23 @@ public class MetroLineManager : Singleton<MetroLineManager>
     {
         get
         {
-            return metroLineRoot.GetChild(MetroLineCount).GetComponent<RectTransform>();
+            if(MetroLineCount > 0)
+            {
+                return metroLineRoot.GetChild(MetroLineCount - 1).GetComponent<RectTransform>();
+            }
+            else
+            {
+                Debug.LogError("MetroLineCount is Zero");
+                return null;
+            }
         }
     }
-
-    private float _metroLineWidth = Const.metroLineWidth;
 
     public MetroLine CreateMetroLine()
     {
         GameObject metroLineObj = new GameObject($"MetroLine{metroLines.Count}");
         metroLineObj.transform.parent = metroLineRoot;
+        metroLineObj.AddComponent<RectTransform>();
         MetroLine metroLine = metroLineObj.AddComponent<MetroLine>();
         metroLines.Add(metroLine);
         return metroLine;
@@ -69,7 +84,7 @@ public class MetroLineManager : Singleton<MetroLineManager>
             DrawLineBetween(cityNodes[i].GetComponent<RectTransform>(),
                             cityNodes[i + 1].GetComponent<RectTransform>(),
                             metroLine.GetComponent<RectTransform>(),
-                            metroLineColor, _metroLineWidth);
+                            metroLineColor, Const.metroLineWidth);
         }
     }
 
