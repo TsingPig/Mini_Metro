@@ -19,6 +19,7 @@ public class MainPresenter : PresenterBase<IMainView>, IMainPresenter
         {
             Vector2 point = points[i] + new Vector2(-Const.screenDefaultWidth / 2, -Const.screenDefaultHeight / 2);
             GameObject cityNodeObj = await Instantiater.InstantiateAsync(Str.CITY_NODE_DATA_PATH, _view.CityNodeRoot);
+            cityNodeObj.name = $"CityNode{i}";
             cityNodeObj.GetComponent<RectTransform>().localPosition = new Vector3(point.x, point.y, 0);
             cityNodeObj.GetComponent<CityNode>().cityNodeType = (CityNodeType)Random.Range(0, 3);
             cityNodeObj.GetComponent<CityNode>().UpdateCityNodeImage();

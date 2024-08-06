@@ -27,16 +27,6 @@ public class MetroLineManager : Singleton<MetroLineManager>
     [HideInInspector]
     public List<Color> metroLineColors;
 
-    private int MetroLineCount
-    {
-        get { return metroLines.Count; }
-    }
-
-    private GameObject _currentLineObj;
-
-    private Vector2 _startLocalPoint;
-    private Vector2 _endLocalPoint;
-
     public Color CurrentMetroLineColor
     {
         get
@@ -85,6 +75,14 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
     }
 
+    private int MetroLineCount
+    {
+        get { return metroLines.Count; }
+    }
+    private GameObject _currentLineObj;
+    private Vector2 _startLocalPoint;
+    private Vector2 _endLocalPoint;
+
     /// <summary>
     /// 创建新的地铁线路
     /// </summary>
@@ -109,7 +107,6 @@ public class MetroLineManager : Singleton<MetroLineManager>
         RectTransform lineRoot = CurrentMetroLineRoot;
         Color color = CurrentMetroLineColor;
 
-        //_currentLineObj = await Instantiater.InstantiateAsync(Str.LINE_PREFAB_DATA_PATH, lineRoot);
         _currentLineObj = Instantiater.Instantiate(Str.LINE_PREFAB_DATA_PATH, lineRoot);
         _currentLineObj.GetComponent<Image>().color = color;
 
