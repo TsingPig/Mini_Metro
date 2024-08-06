@@ -34,6 +34,19 @@ public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
             return startLocalPoint;
         }
     }
+
+    public Vector2 EndLocalPoint
+    {
+        get
+        {
+            RectTransform rectTransform = GetComponent<RectTransform>();
+            Vector2 endWorldPoint = rectTransform.position;
+            Vector2 endLocalPoint;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, endWorldPoint, null, out endLocalPoint);
+            return endLocalPoint;
+        }
+    }
+
     public MetroLine MetroLine { get => _metroLine; set => _metroLine = value; }
 
     private MetroLine _metroLine = null;
@@ -67,9 +80,12 @@ public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("OnDrag");
-        Vector2 endLocalPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, eventData.position, eventData.pressEventCamera, out endLocalPoint);
-        MetroLineManager.Instance.UpdateLineEnd(endLocalPoint);
+        if(MetroLineManager.Instance.isDrag)
+        {
+            Vector2 endLocalPoint;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, eventData.position, eventData.pressEventCamera, out endLocalPoint);
+            MetroLineManager.Instance.UpdateLineEnd(endLocalPoint);
+        }
     }
 
     public async void OnPointerEnter(PointerEventData eventData)
@@ -78,14 +94,19 @@ public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
         {
             if(!MetroLineManager.Instance.CurrentMetroLine.cityNodes.Contains(this))
             {
-
+                MetroLineManager.Instance.isDrag = false;
                 StartRipple();
                 MetroLineManager.Instance.CurrentMetroLine.cityNodes.Add(this);
+                MetroLineManager.Instance.UpdateLineEnd(EndLocalPoint);
+                
                 await MetroLineManager.Instance.DrawLine(StartLocalPoint);
                 Debug.Log("OnPointerEnter");
+
+                MetroLineManager.Instance.isDrag = true;
             }
         }
     }
+
     private void Start()
     {
     }
