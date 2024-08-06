@@ -11,6 +11,23 @@ public class MetroLineManager : Singleton<MetroLineManager>
 
     public List<MetroLine> metroLines;
 
+    public Vector2 StartLocalPoint
+    {
+
+        get { return _startLocalPoint; }
+        set { _startLocalPoint = value; }
+    }
+
+    public Vector2 EndLocalPoint
+    {
+
+        get { return _endLocalPoint; }
+        set { _endLocalPoint = value; }
+    }
+
+
+    public bool isDrag = false;
+
     [HideInInspector]
     public List<Color> metroLineColors;
 
@@ -18,7 +35,11 @@ public class MetroLineManager : Singleton<MetroLineManager>
     {
         get { return metroLines.Count; }
     }
+
     private GameObject _currentLineObj;
+
+    private Vector2 _startLocalPoint;
+    private Vector2 _endLocalPoint;
 
     public Color CurrentMetroLineColor
     {
@@ -52,6 +73,22 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
     }
 
+    public MetroLine CurrentMetroLine
+    {
+        get
+        {
+            if(MetroLineCount > 0)
+            {
+                return metroLines[metroLines.Count - 1];
+            }
+            else
+            {
+                Debug.LogError("MetroLineCount is Zero");
+                return null;
+            }
+        }
+    }
+
     public MetroLine CreateMetroLine()
     {
         GameObject metroLineObj = new GameObject($"MetroLine{metroLines.Count}");
@@ -62,80 +99,44 @@ public class MetroLineManager : Singleton<MetroLineManager>
         return metroLine;
     }
 
-    [Button("CreateMetroLine")]
-    public async Task CreateMetroLine(List<CityNode> cityNodes, Color metroLineColor)
-    {
-        GameObject metroLineObj = new GameObject($"MetroLine{metroLines.Count}");
-        metroLineObj.transform.parent = metroLineRoot;
-
-        metroLineObj.AddComponent<RectTransform>();
-        MetroLine metroLine = metroLineObj.AddComponent<MetroLine>();
-
-        metroLine.name = $"MetroLine{metroLines.Count}";
-        metroLine.cityNodes = cityNodes;
-        metroLine.metroLineColor = metroLineColor;
-
-        metroLines.Add(metroLine);
-        foreach(CityNode cityNode in cityNodes)
-        {
-            cityNode.MetroLine = metroLine;
-        }
-        for(int i = 0; i < cityNodes.Count - 1; i++)
-        {
-            await DrawLineBetween(cityNodes[i].GetComponent<RectTransform>(),
-                            cityNodes[i + 1].GetComponent<RectTransform>(),
-                            metroLine.GetComponent<RectTransform>(),
-                            metroLineColor);
-        }
-    }
-
-
-    public void UpdateLinePosition(Vector2 startLocalPoint, Vector2 endLocalPoint)
+    public void UpdateLineEnd(Vector2 endLocalPoint)
     {
         if(_currentLineObj != null)
         {
+            EndLocalPoint = endLocalPoint;
 
             RectTransform lineRectTransform = _currentLineObj.GetComponent<RectTransform>();
             lineRectTransform.sizeDelta = Vector2.zero;
 
-            Vector2 sizeDelta = new Vector2(Vector2.Distance(startLocalPoint, endLocalPoint), Const.metroLineWidth);
+            Vector2 sizeDelta = new Vector2(Vector2.Distance(_startLocalPoint, endLocalPoint), Const.metroLineWidth);
             lineRectTransform.sizeDelta = sizeDelta;
-            lineRectTransform.anchoredPosition = startLocalPoint;
+            lineRectTransform.anchoredPosition = _startLocalPoint;
 
-            float angle = Mathf.Atan2(endLocalPoint.y - startLocalPoint.y, endLocalPoint.x - startLocalPoint.x) * Mathf.Rad2Deg;
+            float angle = Mathf.Atan2(endLocalPoint.y - _startLocalPoint.y, endLocalPoint.x - _startLocalPoint.x) * Mathf.Rad2Deg;
             lineRectTransform.localRotation = Quaternion.Euler(0, 0, angle);
-
         }
     }
 
-    public async Task DrawLineBetween(Vector2 startLocalPoint, Vector2 endLocalPoint, RectTransform lineRoot, Color color)
+    public async Task DrawLine(Vector2 startLocalPoint)
     {
+        StartLocalPoint = startLocalPoint;
+
+        RectTransform lineRoot = CurrentMetroLineRoot;
+        Color color = CurrentMetroLineColor;
+
         _currentLineObj = await Instantiater.InstantiateAsync(Str.LINE_PREFAB_DATA_PATH, lineRoot);
         _currentLineObj.GetComponent<Image>().color = color;
 
         RectTransform lineRectTransform = _currentLineObj.GetComponent<RectTransform>();
         lineRectTransform.sizeDelta = Vector2.zero;
 
-        Vector2 sizeDelta = new Vector2(Vector2.Distance(startLocalPoint, endLocalPoint), Const.metroLineWidth);
+        Vector2 sizeDelta = new Vector2(Vector2.Distance(_startLocalPoint, _endLocalPoint), Const.metroLineWidth);
         lineRectTransform.sizeDelta = sizeDelta;
         lineRectTransform.pivot = new Vector2(0, 0.5f);
-        lineRectTransform.anchoredPosition = startLocalPoint;
+        lineRectTransform.anchoredPosition = _startLocalPoint;
 
-        float angle = Mathf.Atan2(endLocalPoint.y - startLocalPoint.y, endLocalPoint.x - startLocalPoint.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(_endLocalPoint.y - _startLocalPoint.y, _endLocalPoint.x - _startLocalPoint.x) * Mathf.Rad2Deg;
         lineRectTransform.localRotation = Quaternion.Euler(0, 0, angle);
-    
-        
-    }
-
-
-
-    public async Task DrawLineBetween(RectTransform startRect, RectTransform endRect, RectTransform lineRoot, Color color)
-    {
-        Vector2 startLocalPoint;
-        Vector2 endLocalPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(lineRoot, startRect.position, null, out startLocalPoint);
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(lineRoot, endRect.position, null, out endLocalPoint);
-        await DrawLineBetween(startLocalPoint, endLocalPoint, lineRoot, color);
     }
 
     private void Initialize()

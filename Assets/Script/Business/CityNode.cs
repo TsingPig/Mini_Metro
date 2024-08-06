@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
 using TsingPigSDK;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public enum CityNodeType
@@ -13,7 +13,7 @@ public enum CityNodeType
     Diamond = 3
 }
 
-public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
+public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler, IPointerEnterHandler
 {
     public Sprite[] cityNodeFillTextures;
     public Sprite[] cityNodeOutlineTextures;
@@ -23,47 +23,69 @@ public class CityNode : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
     public Button cityNodeButton;
     public GameObject ripplePrefab;
 
+    public Vector2 StartLocalPoint
+    {
+        get
+        {
+            RectTransform rectTransform = GetComponent<RectTransform>();
+            Vector2 startWorldPoint = rectTransform.position;
+            Vector2 startLocalPoint;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, startWorldPoint, null, out startLocalPoint);
+            return startLocalPoint;
+        }
+    }
     public MetroLine MetroLine { get => _metroLine; set => _metroLine = value; }
 
     private MetroLine _metroLine = null;
     private RippleEffect _rippleEffect;
 
-
     public async void OnPointerDown(PointerEventData eventData)
     {
-        StartRipple();
-        MetroLineManager.Instance.CreateMetroLine();
+        if(MetroLineManager.Instance.isDrag == false)
+        {
+            Debug.Log("OnPointerDown");
+            StartRipple();
+            MetroLineManager.Instance.CreateMetroLine();
+            MetroLineManager.Instance.isDrag = true;
+            MetroLineManager.Instance.CurrentMetroLine.cityNodes.Add(this);
 
-        RectTransform rectTransform = GetComponent<RectTransform>();
-        Vector2 startWorldPoint = rectTransform.position;
-        Vector2 startLocalPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, startWorldPoint, null, out startLocalPoint);
-        Vector2 endLocalPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, eventData.position, eventData.pressEventCamera, out endLocalPoint);
-        await MetroLineManager.Instance.DrawLineBetween(startLocalPoint, endLocalPoint, MetroLineManager.Instance.CurrentMetroLineRoot, MetroLineManager.Instance.CurrentMetroLineColor);
+            Vector2 endLocalPoint;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, eventData.position, eventData.pressEventCamera, out endLocalPoint);
+            await MetroLineManager.Instance.DrawLine(StartLocalPoint);
+            MetroLineManager.Instance.UpdateLineEnd(endLocalPoint);
 
-        Debug.Log("OnPointerDown");
+        }
 
     }
 
-    public async void OnPointerUp(PointerEventData eventData)
+    public void OnPointerUp(PointerEventData eventData)
     {
         Debug.Log("OnPointerUp");
+        MetroLineManager.Instance.isDrag = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("OnDrag");
-        RectTransform rectTransform = GetComponent<RectTransform>();
-        Vector2 startWorldPoint = rectTransform.position;
-        Vector2 startLocalPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, startWorldPoint, null, out startLocalPoint);
         Vector2 endLocalPoint;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, eventData.position, eventData.pressEventCamera, out endLocalPoint);
-        MetroLineManager.Instance.UpdateLinePosition(startLocalPoint, endLocalPoint);
-
+        MetroLineManager.Instance.UpdateLineEnd(endLocalPoint);
     }
 
+    public async void OnPointerEnter(PointerEventData eventData)
+    {
+        if(MetroLineManager.Instance.isDrag)
+        {
+            if(!MetroLineManager.Instance.CurrentMetroLine.cityNodes.Contains(this))
+            {
+
+                StartRipple();
+                MetroLineManager.Instance.CurrentMetroLine.cityNodes.Add(this);
+                await MetroLineManager.Instance.DrawLine(StartLocalPoint);
+                Debug.Log("OnPointerEnter");
+            }
+        }
+    }
     private void Start()
     {
     }

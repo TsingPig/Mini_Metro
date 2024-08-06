@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class MetroLine : MonoBehaviour
 {
     public string metroLineName;
