@@ -1,5 +1,6 @@
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using TsingPigSDK;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +8,6 @@ using UnityEngine.UI;
 public class MetroLineManager : Singleton<MetroLineManager>
 {
     public RectTransform metroLineRoot;
-    public GameObject linePrefab;
 
     public List<MetroLine> metroLines;
 
@@ -18,6 +18,7 @@ public class MetroLineManager : Singleton<MetroLineManager>
     {
         get { return metroLines.Count; }
     }
+    private GameObject _currentLineObj;
 
     public Color CurrentMetroLineColor
     {
@@ -62,7 +63,7 @@ public class MetroLineManager : Singleton<MetroLineManager>
     }
 
     [Button("CreateMetroLine")]
-    public void CreateMetroLine(List<CityNode> cityNodes, Color metroLineColor)
+    public async Task CreateMetroLine(List<CityNode> cityNodes, Color metroLineColor)
     {
         GameObject metroLineObj = new GameObject($"MetroLine{metroLines.Count}");
         metroLineObj.transform.parent = metroLineRoot;
@@ -81,29 +82,23 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
         for(int i = 0; i < cityNodes.Count - 1; i++)
         {
-            DrawLineBetween(cityNodes[i].GetComponent<RectTransform>(),
+            await DrawLineBetween(cityNodes[i].GetComponent<RectTransform>(),
                             cityNodes[i + 1].GetComponent<RectTransform>(),
                             metroLine.GetComponent<RectTransform>(),
-                            metroLineColor, Const.metroLineWidth);
+                            metroLineColor);
         }
     }
 
-    public void DrawLineBetween(RectTransform startRect, RectTransform endRect, RectTransform lineRoot, Color color, float width)
+    public async Task DrawLineBetween(Vector2 startLocalPoint, Vector2 endLocalPoint, RectTransform lineRoot, Color color)
     {
-        GameObject newLine = Instantiate(linePrefab, lineRoot);
-        Image lineImage = newLine.GetComponent<Image>();
-        lineImage.color = color;
+        // if(_currentLineObj) Instantiater.DeactivateObject(_currentLineObj);
+        _currentLineObj = await Instantiater.InstantiateAsync(Str.LINE_PREFAB_DATA_PATH, lineRoot);
+        _currentLineObj.GetComponent<Image>().color = color;
 
-        RectTransform lineRectTransform = newLine.GetComponent<RectTransform>();
+        RectTransform lineRectTransform = _currentLineObj.GetComponent<RectTransform>();
         lineRectTransform.sizeDelta = Vector2.zero;
 
-        Vector2 startLocalPoint;
-        Vector2 endLocalPoint;
-
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(lineRoot, startRect.position, null, out startLocalPoint);
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(lineRoot, endRect.position, null, out endLocalPoint);
-
-        Vector2 sizeDelta = new Vector2(Vector2.Distance(startLocalPoint, endLocalPoint), width);
+        Vector2 sizeDelta = new Vector2(Vector2.Distance(startLocalPoint, endLocalPoint), Const.metroLineWidth);
         lineRectTransform.sizeDelta = sizeDelta;
         lineRectTransform.pivot = new Vector2(0, 0.5f);
         lineRectTransform.anchoredPosition = startLocalPoint;
@@ -112,9 +107,19 @@ public class MetroLineManager : Singleton<MetroLineManager>
         lineRectTransform.localRotation = Quaternion.Euler(0, 0, angle);
     }
 
-    private async void Initialize()
+
+
+    public async Task DrawLineBetween(RectTransform startRect, RectTransform endRect, RectTransform lineRoot, Color color)
     {
-        linePrefab = await Instantiater.InstantiateAsync(Str.LINE_DATA_PATH, transform);
+        Vector2 startLocalPoint;
+        Vector2 endLocalPoint;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(lineRoot, startRect.position, null, out startLocalPoint);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(lineRoot, endRect.position, null, out endLocalPoint);
+        await DrawLineBetween(startLocalPoint, endLocalPoint, lineRoot, color);
+    }
+
+    private void Initialize()
+    {
         metroLines = new List<MetroLine>();
         metroLineColors = new List<Color>()
         {
