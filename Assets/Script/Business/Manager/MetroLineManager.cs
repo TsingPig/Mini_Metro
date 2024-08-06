@@ -103,12 +103,12 @@ public class MetroLineManager : Singleton<MetroLineManager>
     {
         if(_currentLineObj != null)
         {
-            EndLocalPoint = endLocalPoint;
 
             RectTransform lineRectTransform = _currentLineObj.GetComponent<RectTransform>();
             lineRectTransform.sizeDelta = Vector2.zero;
 
-            Vector2 sizeDelta = new Vector2(Vector2.Distance(_startLocalPoint, endLocalPoint), Const.metroLineWidth);
+            _endLocalPoint = endLocalPoint;
+            Vector2 sizeDelta = new Vector2(Vector2.Distance(_startLocalPoint, _endLocalPoint), Const.metroLineWidth);
             lineRectTransform.sizeDelta = sizeDelta;
             lineRectTransform.anchoredPosition = _startLocalPoint;
 
@@ -119,7 +119,6 @@ public class MetroLineManager : Singleton<MetroLineManager>
 
     public async Task DrawLine(Vector2 startLocalPoint)
     {
-        StartLocalPoint = startLocalPoint;
 
         RectTransform lineRoot = CurrentMetroLineRoot;
         Color color = CurrentMetroLineColor;
@@ -130,6 +129,8 @@ public class MetroLineManager : Singleton<MetroLineManager>
         RectTransform lineRectTransform = _currentLineObj.GetComponent<RectTransform>();
         lineRectTransform.sizeDelta = Vector2.zero;
 
+
+        _startLocalPoint = startLocalPoint;
         Vector2 sizeDelta = new Vector2(Vector2.Distance(_startLocalPoint, _endLocalPoint), Const.metroLineWidth);
         lineRectTransform.sizeDelta = sizeDelta;
         lineRectTransform.pivot = new Vector2(0, 0.5f);
