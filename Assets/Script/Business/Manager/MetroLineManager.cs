@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using TsingPigSDK;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MetroLineManager : Singleton<MetroLineManager>
@@ -75,13 +75,48 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
     }
 
+    public GameObject CurrentLineObj
+    {
+        get { return _currentLineObj; }
+    }
+
+    /// <summary>
+    /// 捕获Canvas上指针指着的物体
+    /// </summary>
+    public GameObject GetUIObjectUnderMouse
+    {
+        get
+        {
+            PointerEventData pointerEventData = new PointerEventData(EventSystem.current)
+            {
+                position = Input.mousePosition
+            };
+
+            List<RaycastResult> raycastResults = new List<RaycastResult>();
+            _graphicRaycaster.Raycast(pointerEventData, raycastResults);
+            foreach(var raycastResult in raycastResults)
+            {
+                GameObject obj = raycastResult.gameObject;
+                Debug.Log(obj);
+                if(obj.CompareTag(Const.CheckTargetTag))
+                {
+                    return obj;
+                }
+            }
+
+            return null;
+        }
+    }
+
     private int MetroLineCount
     {
         get { return metroLines.Count; }
     }
+
     private GameObject _currentLineObj;
     private Vector2 _startLocalPoint;
     private Vector2 _endLocalPoint;
+    private GraphicRaycaster _graphicRaycaster;
 
     /// <summary>
     /// 创建新的地铁线路
@@ -144,7 +179,6 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
     }
 
-
     private void Initialize()
     {
         metroLines = new List<MetroLine>();
@@ -171,10 +205,17 @@ public class MetroLineManager : Singleton<MetroLineManager>
             new Color(0.25f, 0.25f, 0.75f), // Indigo
             new Color(0.0f, 0.5f, 1.0f) // Sky Blue
         };
+
+        _graphicRaycaster = GameObject.Find("CanvasRoot").GetComponent<GraphicRaycaster>();
     }
 
     private void Start()
     {
         Initialize();
+    }
+
+    private void Update()
+    {
+        if(GetUIObjectUnderMouse) Debug.Log($"{GetUIObjectUnderMouse.name}");
     }
 }

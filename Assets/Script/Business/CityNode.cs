@@ -122,6 +122,7 @@ public class CityNode : MonoBehaviour
         Debug.Log($"OnPointerUp: {gameObject.name}");
         MetroLineManager.Instance.isDrag = false;
         isDragging = false;
+
     }
 
     private void OnDrag()
