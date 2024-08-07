@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using TsingPigSDK;
 using UnityEngine;
@@ -179,6 +180,9 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
     }
 
+    /// <summary>
+    /// 删除上一次创建的线条物体
+    /// </summary>
     public void DeactivateCurrentLineObj()
     {
         Instantiater.DeactivateObject(_currentLineObj);
@@ -187,6 +191,18 @@ public class MetroLineManager : Singleton<MetroLineManager>
             metroLines.Remove(CurrentMetroLine);
         }
         _currentLineObj = null;
+    }
+
+    [Button("显示线路信息")]
+    public void ShowLineInfo()
+    {
+        foreach(var metroLine in metroLines)
+        {
+            foreach(var cityNode in metroLine.cityNodes)
+            {
+                Debug.Log($"{metroLine.name}: {cityNode.name}");
+            }
+        }
     }
 
     private void Initialize()

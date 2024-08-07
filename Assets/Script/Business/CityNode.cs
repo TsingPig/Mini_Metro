@@ -1,3 +1,4 @@
+using TMPro;
 using TsingPigSDK;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,6 +20,7 @@ public class CityNode : MonoBehaviour
     public CityNodeType cityNodeType;
     public Button cityNodeButton;
     public GameObject ripplePrefab;
+    public TMP_Text txtName;
 
     private MetroLine _metroLine = null;
     private RippleEffect _rippleEffect;

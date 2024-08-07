@@ -31,7 +31,15 @@
 
 2. 地铁线路生成管理器 **MetroLineManager.cs**
 
+    拖动连线、磁吸效果、创建保护。
+
 <img src="https://github.com/user-attachments/assets/049b18ef-f317-40bc-80d8-899f851e4cb8" alt="image-20240803203858611" width="50%">
+
+3. 车站数字标号显示
+
+<img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240807170543593.png" alt="image-20240807170543593" style="zoom:33%;" />
+
+4. 
 
 # 策划
 
