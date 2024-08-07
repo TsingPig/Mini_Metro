@@ -83,7 +83,7 @@ public class MetroLineManager : Singleton<MetroLineManager>
     /// <summary>
     /// 捕获Canvas上指针指着的物体
     /// </summary>
-    public GameObject GetUIObjectUnderMouse
+    public GameObject GetUIMouseObj
     {
         get
         {
@@ -179,6 +179,16 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
     }
 
+    public void DeactivateCurrentLineObj()
+    {
+        Instantiater.DeactivateObject(_currentLineObj);
+        if(CurrentMetroLine.cityNodes.Count <= 1)
+        {
+            metroLines.Remove(CurrentMetroLine);
+        }
+        _currentLineObj = null;
+    }
+
     private void Initialize()
     {
         metroLines = new List<MetroLine>();
@@ -216,6 +226,6 @@ public class MetroLineManager : Singleton<MetroLineManager>
 
     private void Update()
     {
-        if(GetUIObjectUnderMouse) Debug.Log($"{GetUIObjectUnderMouse.name}");
+        if(GetUIMouseObj) Debug.Log($"{GetUIMouseObj.name}");
     }
 }

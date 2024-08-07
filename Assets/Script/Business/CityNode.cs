@@ -102,7 +102,7 @@ public class CityNode : MonoBehaviour
     {
         if(MetroLineManager.Instance.isDrag == false)
         {
-            Debug.Log($"OnPointerDown: {gameObject.name}");
+            //Debug.Log($"OnPointerDown: {gameObject.name}");
             StartRipple();
             MetroLineManager.Instance.CreateMetroLine();
             MetroLineManager.Instance.isDrag = true;
@@ -119,15 +119,20 @@ public class CityNode : MonoBehaviour
 
     private void OnPointerUp()
     {
-        Debug.Log($"OnPointerUp: {gameObject.name}");
+        //Debug.Log($"OnPointerUp: {gameObject.name}");
         MetroLineManager.Instance.isDrag = false;
         isDragging = false;
+        if(!MetroLineManager.Instance.GetUIMouseObj)
+        {
+            MetroLineManager.Instance.DeactivateCurrentLineObj();
+            
+        }
 
     }
 
     private void OnDrag()
     {
-        Debug.Log($"OnDrag: {gameObject.name}");
+        //Debug.Log($"OnDrag: {gameObject.name}");
         if(MetroLineManager.Instance.isDrag)
         {
             Vector2 endLocalPoint;
@@ -138,7 +143,7 @@ public class CityNode : MonoBehaviour
 
     private void OnPointerEnter()
     {
-        Debug.Log($"OnPointerEnter: {gameObject.name}");
+        //Debug.Log($"OnPointerEnter: {gameObject.name}");
         if(MetroLineManager.Instance.isDrag)
         {
             if(!MetroLineManager.Instance.CurrentMetroLine.cityNodes.Contains(this))
@@ -153,7 +158,7 @@ public class CityNode : MonoBehaviour
 
     private void OnPointerExit()
     {
-        Debug.Log($"OnPointerExit: {gameObject.name}");
+        //Debug.Log($"OnPointerExit: {gameObject.name}");
     }
 
     private async void StartRipple()
