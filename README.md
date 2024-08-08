@@ -39,7 +39,15 @@
 
 <img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240807170543593.png" alt="image-20240807170543593" style="zoom:33%;" />
 
-4. 
+
+
+## v0.3.0 版本
+
+1. 地铁列车（**MetroTrain**）
+
+	2.  
+	2.  
+	2. 
 
 # 策划
 
@@ -60,7 +68,7 @@
 ## 有限的地铁资源
 
 1. 地铁线路（MetroLine）：3 ~ 20条
-2. 地铁列车（MetroTrain）：载客6人的动力列车头。
+2. 地铁列车（**MetroTrain**）：载客6人的动力列车头。
 3. 地铁车厢（MetroCarriage）：载客6人的、需挂载至列车头的车厢节。
 4. 隧道 / 桥梁（MetroBrigde）：用于穿越河流。
 5. 换乘枢纽（MetroTransferHub）：提高车站的最大客容量（生存模式）、换乘效率（创意模式）。

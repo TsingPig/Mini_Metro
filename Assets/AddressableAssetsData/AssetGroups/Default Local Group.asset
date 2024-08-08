@@ -37,6 +37,10 @@ MonoBehaviour:
     m_Address: LinePrefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: fc419b5aac2b2204b84df138bd07a6c5
+    m_Address: MetroTrain
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c953c7481fc596b4aaffa4b05fbeb43a, type: 2}
   m_SchemaSet:

@@ -106,9 +106,10 @@ public class CityNode : MonoBehaviour
         {
             //Debug.Log($"OnPointerDown: {gameObject.name}");
             StartRipple();
-            MetroLineManager.Instance.CreateMetroLine();
+            MetroLine metroLine = MetroLineManager.Instance.CreateMetroLine();
+            metroLine.metroLineColor = MetroLineManager.Instance.CurrentMetroLineColor;
             MetroLineManager.Instance.isDrag = true;
-            MetroLineManager.Instance.CurrentMetroLine.cityNodes.Add(this);
+            MetroLineManager.Instance.CurrentMetroLine.CityNodes.Add(this);
 
             Vector2 endLocalPoint;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, Input.mousePosition, null, out endLocalPoint);
@@ -148,10 +149,10 @@ public class CityNode : MonoBehaviour
         //Debug.Log($"OnPointerEnter: {gameObject.name}");
         if(MetroLineManager.Instance.isDrag)
         {
-            if(!MetroLineManager.Instance.CurrentMetroLine.cityNodes.Contains(this))
+            if(!MetroLineManager.Instance.CurrentMetroLine.CityNodes.Contains(this))
             {
                 StartRipple();
-                MetroLineManager.Instance.CurrentMetroLine.cityNodes.Add(this);
+                MetroLineManager.Instance.CurrentMetroLine.CityNodes.Add(this);
                 MetroLineManager.Instance.UpdateLineEnd(EndLocalPoint);
                 MetroLineManager.Instance.DrawLine(StartLocalPoint);
             }

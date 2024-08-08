@@ -186,7 +186,7 @@ public class MetroLineManager : Singleton<MetroLineManager>
     public void DeactivateCurrentLineObj()
     {
         Instantiater.DeactivateObject(_currentLineObj);
-        if(CurrentMetroLine.cityNodes.Count <= 1)
+        if(CurrentMetroLine.CityNodes.Count <= 1)
         {
             metroLines.Remove(CurrentMetroLine);
         }
@@ -198,7 +198,7 @@ public class MetroLineManager : Singleton<MetroLineManager>
     {
         foreach(var metroLine in metroLines)
         {
-            foreach(var cityNode in metroLine.cityNodes)
+            foreach(var cityNode in metroLine.CityNodes)
             {
                 Debug.Log($"{metroLine.name}: {cityNode.name}");
             }
