@@ -522,3 +522,4 @@ MonoBehaviour:
   cityNodeButton: {fileID: 7306392041809140588}
   ripplePrefab: {fileID: 4367752974190513918, guid: 6ee32f54a3e93f641b595911043bc59a, type: 3}
   txtName: {fileID: 5252776271371462285}
+  rectTransform: {fileID: 7306392041809140591}

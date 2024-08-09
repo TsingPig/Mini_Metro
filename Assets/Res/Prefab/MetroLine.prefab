@@ -54,7 +54,7 @@ MonoBehaviour:
   metroLineName: 
   metroLineColor: {r: 0, g: 1, b: 0, a: 1}
   metroTrainRoot: {fileID: 2831683357382089698}
-  lineRoot: {fileID: 4728784880083433426}
+  metroLineRoot: {fileID: 4728784880083433426}
 --- !u!1 &4315732021448088396
 GameObject:
   m_ObjectHideFlags: 0
@@ -65,7 +65,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4728784880083433426}
   m_Layer: 0
-  m_Name: LineRoot
+  m_Name: MetroLineRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

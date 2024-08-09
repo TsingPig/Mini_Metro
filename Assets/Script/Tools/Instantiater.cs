@@ -55,7 +55,7 @@ namespace TsingPigSDK
             }
         }
 
-        public static async Task<GameObject> InstantiateAsync(string addressablePath, Transform parent)
+        public static async Task<GameObject> InstantiateAsync(string addressablePath, Transform parent, string objName = null)
         {
             List<GameObject> objectPool;
 
@@ -87,6 +87,7 @@ namespace TsingPigSDK
                         _objectPools[addressablePath] = new List<GameObject>();
                     }
                     _objectPools[addressablePath].Add(instantiatedObject);
+                    if(objName != null) instantiatedObject.name = objName;
                     return instantiatedObject;
                 }
                 else
@@ -102,7 +103,21 @@ namespace TsingPigSDK
             }
         }
 
-        public static GameObject Instantiate(string addressablePath, Transform parent)
+        public static async Task<T> InstantiateAsync<T>(string addressablePath, Transform parent, string objName = null)
+        {
+            GameObject obj = await InstantiateAsync(addressablePath, parent, objName);
+            T comp = obj.GetComponent<T>();
+            if(comp != null)
+            {
+                return comp;
+            }
+            else {
+                Debug.LogError($"{addressablePath}GameObject缺少{typeof(T)}类型组件");
+                return default(T);
+            }
+        }
+
+        public static GameObject Instantiate(string addressablePath, Transform parent, string objName = null)
         {
             List<GameObject> objectPool;
 
@@ -129,6 +144,7 @@ namespace TsingPigSDK
                     _objectPools[addressablePath] = new List<GameObject>();
                 }
                 _objectPools[addressablePath].Add(instantiatedObject);
+                if(objName != null) instantiatedObject.name = objName;
                 return instantiatedObject;
             }
             else
@@ -138,11 +154,19 @@ namespace TsingPigSDK
             }
         }
 
-        public static GameObject Instantiate(string addressablePath, Transform parent, string objName)
+        public static T Instantiate<T>(string addressablePath, Transform parent, string objName = null)
         {
-            GameObject obj = Instantiate(addressablePath, parent);
-            obj.name = objName;
-            return obj;
+            GameObject obj = Instantiate(addressablePath, parent, objName);
+            T comp = obj.GetComponent<T>();
+            if(comp != null)
+            {
+                return comp;
+            }
+            else
+            {
+                Debug.LogError($"{addressablePath}GameObject缺少{typeof(T)}类型组件");
+                return default(T);
+            }
         }
 
         public static void DeactivateObjectPool(string addressablePath)

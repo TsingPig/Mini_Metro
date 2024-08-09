@@ -28,6 +28,10 @@ public class MetroLineManager : Singleton<MetroLineManager>
     [HideInInspector]
     public List<Color> metroLineColors;
 
+    /// <summary>
+    /// 获得当前正在访问的地铁线路颜色
+    /// </summary>
+
     public Color CurrentMetroLineColor
     {
         get
@@ -44,22 +48,9 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
     }
 
-    public RectTransform CurrentMetroLineRoot
-    {
-        get
-        {
-            if(MetroLineCount > 0)
-            {
-                return metroLineRoot.GetChild(MetroLineCount - 1).transform.GetChild(0).GetComponent<RectTransform>();
-            }
-            else
-            {
-                Debug.LogError("MetroLineCount is Zero");
-                return null;
-            }
-        }
-    }
-
+    /// <summary>
+    /// 获得当前正在访问的地铁线路
+    /// </summary>
     public MetroLine CurrentMetroLine
     {
         get
@@ -76,6 +67,28 @@ public class MetroLineManager : Singleton<MetroLineManager>
         }
     }
 
+    /// <summary>
+    /// 获得当前正在地铁线路的线路绘制节点
+    /// </summary>
+    public RectTransform CurrentMetroLineRoot
+    {
+        get
+        {
+            if(MetroLineCount > 0)
+            {
+                return metroLineRoot.GetChild(MetroLineCount - 1).GetComponent<MetroLine>().metroLineRoot;
+            }
+            else
+            {
+                Debug.LogError("MetroLineCount is Zero");
+                return null;
+            }
+        }
+    }
+
+    /// <summary>
+    /// 获得当前正在绘制的地铁线路物体
+    /// </summary>
     public GameObject CurrentLineObj
     {
         get { return _currentLineObj; }
@@ -125,8 +138,7 @@ public class MetroLineManager : Singleton<MetroLineManager>
     /// <returns></returns>
     public MetroLine CreateMetroLine()
     {
-        GameObject metroLineObj = Instantiater.Instantiate(Str.METRO_LINE_DATA_PATH, metroLineRoot, $"MetroLine{metroLines.Count}");
-        MetroLine metroLine = metroLineObj.GetComponent<MetroLine>();
+        MetroLine metroLine = Instantiater.Instantiate<MetroLine>(Str.METRO_LINE_DATA_PATH, metroLineRoot, $"MetroLine{metroLines.Count}");
         metroLines.Add(metroLine);
         return metroLine;
     }

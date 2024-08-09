@@ -21,6 +21,7 @@ public class CityNode : MonoBehaviour
     public Button cityNodeButton;
     public GameObject ripplePrefab;
     public TMP_Text txtName;
+    public RectTransform rectTransform;
 
     private MetroLine _metroLine = null;
     private RippleEffect _rippleEffect;
@@ -32,7 +33,6 @@ public class CityNode : MonoBehaviour
     {
         get
         {
-            RectTransform rectTransform = GetComponent<RectTransform>();
             Vector2 startWorldPoint = rectTransform.position;
             Vector2 startLocalPoint;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, startWorldPoint, null, out startLocalPoint);
@@ -44,7 +44,6 @@ public class CityNode : MonoBehaviour
     {
         get
         {
-            RectTransform rectTransform = GetComponent<RectTransform>();
             Vector2 endWorldPoint = rectTransform.position;
             Vector2 endLocalPoint;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(MetroLineManager.Instance.CurrentMetroLineRoot, endWorldPoint, null, out endLocalPoint);
@@ -128,9 +127,7 @@ public class CityNode : MonoBehaviour
         if(!MetroLineManager.Instance.GetUIMouseObj)
         {
             MetroLineManager.Instance.DeactivateCurrentLineObj();
-            
         }
-
     }
 
     private void OnDrag()
