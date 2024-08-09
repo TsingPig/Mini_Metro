@@ -47,14 +47,8 @@
 1. 地铁列车（**MetroTrain**）
 ![image](https://github.com/user-attachments/assets/3aab13ad-25ea-4e8a-9034-ddc5621cbde3)
 
-<<<<<<< HEAD
 2. 寻路算法
 
-​		
-
-=======
-2. 
->>>>>>> 7afb46dba8376db39f971b7964835af96a68a159
 # 策划
 
 用几何节点模拟城市区域车站（简称“车站”），市民有若干**出行需求**。

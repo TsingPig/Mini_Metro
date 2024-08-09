@@ -1,15 +1,17 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 
 public class MetroTrain : MonoBehaviour
 {
     public float trainSpeed = 300f;
+    public float waitTime = 2f;  // 等待时间，单位：秒
 
     public MetroLine CurrentMetroLine { get => _currentMetroLine; set { _currentMetroLine = value; InitializeRoute(); } }
 
     public CityNode CurrentCityNode { get => _currentCityNode; set { _currentCityNode = value; } }
+
+    public bool isWait = false;
 
     private CityNode _currentCityNode;
     private MetroLine _currentMetroLine;
@@ -38,7 +40,7 @@ public class MetroTrain : MonoBehaviour
 
     private void Update()
     {
-        if(CurrentMetroLine != null && CurrentCityNode != null)
+        if(CurrentMetroLine != null && CurrentCityNode != null && !isWait)
         {
             MoveTowardsNextNode();
         }
@@ -54,8 +56,16 @@ public class MetroTrain : MonoBehaviour
 
         if(Vector3.Distance(transform.position, targetTransform.position) < 0.1f)
         {
-            UpdateCurrentNode();
+            StartCoroutine(WaitAtNode()); // 到站后开始等待
         }
+    }
+
+    private IEnumerator WaitAtNode()
+    {
+        isWait = true;
+        yield return new WaitForSeconds(waitTime); 
+        UpdateCurrentNode(); 
+        isWait = false;
     }
 
     private void UpdateCurrentNode()
@@ -80,7 +90,4 @@ public class MetroTrain : MonoBehaviour
         }
         CurrentCityNode = _cityNodes[_currentNodeIndex];
     }
-
-
 }
-
