@@ -50,7 +50,7 @@ public class MetroLineManager : Singleton<MetroLineManager>
         {
             if(MetroLineCount > 0)
             {
-                return metroLineRoot.GetChild(MetroLineCount - 1).GetComponent<RectTransform>();
+                return metroLineRoot.GetChild(MetroLineCount - 1).transform.GetChild(0).GetComponent<RectTransform>();
             }
             else
             {
@@ -125,10 +125,8 @@ public class MetroLineManager : Singleton<MetroLineManager>
     /// <returns></returns>
     public MetroLine CreateMetroLine()
     {
-        GameObject metroLineObj = new GameObject($"MetroLine{metroLines.Count}");
-        metroLineObj.transform.parent = metroLineRoot;
-        metroLineObj.AddComponent<RectTransform>();
-        MetroLine metroLine = metroLineObj.AddComponent<MetroLine>();
+        GameObject metroLineObj = Instantiater.Instantiate(Str.METRO_LINE_DATA_PATH, metroLineRoot, $"MetroLine{metroLines.Count}");
+        MetroLine metroLine = metroLineObj.GetComponent<MetroLine>();
         metroLines.Add(metroLine);
         return metroLine;
     }

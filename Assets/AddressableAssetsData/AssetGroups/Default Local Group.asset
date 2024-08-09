@@ -41,6 +41,10 @@ MonoBehaviour:
     m_Address: MetroTrain
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: fe7a94677e4efd84da6fff0c3bd4c3dc
+    m_Address: MetroLine
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c953c7481fc596b4aaffa4b05fbeb43a, type: 2}
   m_SchemaSet:

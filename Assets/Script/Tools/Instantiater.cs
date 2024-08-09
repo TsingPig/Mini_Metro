@@ -138,6 +138,13 @@ namespace TsingPigSDK
             }
         }
 
+        public static GameObject Instantiate(string addressablePath, Transform parent, string objName)
+        {
+            GameObject obj = Instantiate(addressablePath, parent);
+            obj.name = objName;
+            return obj;
+        }
+
         public static void DeactivateObjectPool(string addressablePath)
         {
             if(_objectPools.ContainsKey(addressablePath))

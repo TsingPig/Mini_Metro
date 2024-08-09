@@ -9,4 +9,5 @@ public static class Str
     public const string LINE_DATA_PATH = "Line";
     public const string LINE_PREFAB_DATA_PATH = "LinePrefab";
     public const string METRO_TRAIN_DATA_PATH = "MetroTrain";
+    public const string METRO_LINE_DATA_PATH = "MetroLine";
 }

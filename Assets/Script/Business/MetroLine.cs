@@ -7,6 +7,8 @@ public class MetroLine : MonoBehaviour
 {
     public string metroLineName;
     public Color metroLineColor;
+    public RectTransform metroTrainRoot;
+    public RectTransform lineRoot;
 
     public List<MetroTrain> MetroTrains { get => _metroTrains; set { _metroTrains = value; } }
     public List<CityNode> CityNodes
@@ -33,7 +35,7 @@ public class MetroLine : MonoBehaviour
         if(CityNodes.Count == 2 && _metroTrains.Count == 0)
         {
 
-            GameObject metroTrainObj = Instantiater.Instantiate(Str.METRO_TRAIN_DATA_PATH, transform);
+            GameObject metroTrainObj = Instantiater.Instantiate(Str.METRO_TRAIN_DATA_PATH, metroTrainRoot);
             MetroTrain metroTrain = metroTrainObj.GetComponent<MetroTrain>();
             metroTrain.CurrentMetroLine = this;
             metroTrain.GetComponent<Image>().color = metroLineColor;
