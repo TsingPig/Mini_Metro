@@ -37,18 +37,24 @@
 
 3. 车站数字标号显示
 
-<img src="C:\Users\TsingPig\AppData\Roaming\Typora\typora-user-images\image-20240807170543593.png" alt="image-20240807170543593" style="zoom:33%;" />
+![image](https://github.com/user-attachments/assets/6a70ff8c-cdf5-43a0-bf0a-fd8f6b302484)
+
 
 ​	4.  泊松分布（**PoissonDiskSampling.cs**）
 
 ## v0.3.0 版本
 
 1. 地铁列车（**MetroTrain**）
+![image](https://github.com/user-attachments/assets/3aab13ad-25ea-4e8a-9034-ddc5621cbde3)
 
+<<<<<<< HEAD
 2. 寻路算法
 
 ​		
 
+=======
+2. 
+>>>>>>> 7afb46dba8376db39f971b7964835af96a68a159
 # 策划
 
 用几何节点模拟城市区域车站（简称“车站”），市民有若干**出行需求**。
